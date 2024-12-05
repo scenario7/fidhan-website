@@ -54,7 +54,7 @@ const WholesaleNeeds = () => {
         <div className='flex py-10'>
             {needs.map((need) => {
                 return(
-                    <NeedsCard props={need}/>
+                    <NeedsCard props={need} key={need.title}/>
                 )
             })}
         </div>

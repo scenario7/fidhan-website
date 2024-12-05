@@ -32,7 +32,7 @@ const AboutUsSummary = () => {
                 Learn What we do at Ipsum
             </h1>
             <p className={`${dmsans.className} text-[#b5b5b5] tracking-tighter`}>
-            A tribute to nature's elegance and timeless beauty. Each piece in this collection captures the delicate intricacies of blooming petals, crafted with precision and adorned with vibrant gemstones to mirror the colors of a blossoming garden.
+            A tribute to natures elegance and timeless beauty. Each piece in this collection captures the delicate intricacies of blooming petals, crafted with precision and adorned with vibrant gemstones to mirror the colors of a blossoming garden.
             </p>
             <button className={`${dmsans.className} outline outline-white px-2 py-1 outline-1 rounded-lg`}>
             Read More &rarr;
