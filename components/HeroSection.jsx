@@ -25,7 +25,7 @@ const HeroSection = () => {
       }}
     >
         <NavBar/>
-        <div className="flex justify-between">
+        <div className="flex justify-between px-20">
         <h1 className={`${federo.className} text-6xl`}>Crafted with excellence,<br/> worn with pride.</h1>
         <p className={`${dmsans.className} w-1/4`}>Our curated collection showcases the finest craftsmanship, featuring pieces that radiate sophistication and celebrate the art of adornment.</p>
         </div>

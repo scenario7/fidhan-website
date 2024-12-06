@@ -15,7 +15,7 @@ const federo = Federo({
 
 const CustomFooter = () => {
   return (
-    <div className='flex items-center justify-between px-10 py-10'>
+    <div className='flex items-center justify-between px-10 py-10 w-screen'>
         <div className='flex flex-col items-start gap-10'>
         <svg width="169" height="40" viewBox="0 0 169 40" fill="none" xmlns="http://www.w3.org/2000/svg">
         <path fill-rule="evenodd" clip-rule="evenodd" d="M10.0148 2.5V40H0V2.5H10.0148Z" fill="#fffff0"></path>

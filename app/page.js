@@ -6,6 +6,7 @@ import ServicesSummary from "@/components/ServicesSummary";
 import OurCollection from "@/components/OurCollection";
 import WholesaleNeeds from "@/components/WholesaleNeeds";
 import CustomFooter from "@/components/CustomFooter";
+import Steps from "@/components/Steps";
 
 const poppins = Federo({
   weight: ["400"], // Specify weights
@@ -20,6 +21,7 @@ export default function Home() {
       <ServicesSummary/>
       <OurCollection/>
       <WholesaleNeeds/>
+      <Steps/>
       <CustomFooter/>
     </div>
   );
