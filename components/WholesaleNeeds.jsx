@@ -48,10 +48,10 @@ const federo = Federo({
 
 const WholesaleNeeds = () => {
   return (
-    <div className='flex flex-col items-center gap-6 px-28'>
-        <h1 className={`${federo.className} text-3xl tracking-tight`}> We understand wholesale needs</h1>
-        <h3 className={`${dmsans.className} text-[#B6B6B6]`}>Discover Timeless Craftsmanship and Unique Designs – Elevating Your Style with Every Exquisite Piece of jewellery by Ipsum.</h3>
-        <div className='flex py-10'>
+    <div className='flex flex-col items-center gap-6 px-10 md:px-28'>
+        <h1 className={`${federo.className} text-3xl tracking-tight text-center`}> We understand wholesale needs</h1>
+        <h3 className={`${dmsans.className} text-[#B6B6B6] text-center`}>Discover Timeless Craftsmanship and Unique Designs – Elevating Your Style with Every Exquisite Piece of jewellery by Ipsum.</h3>
+        <div className='flex flex-col md:flex-row py-10'>
             {needs.map((need) => {
                 return(
                     <NeedsCard props={need} key={need.title}/>

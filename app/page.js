@@ -15,7 +15,7 @@ const poppins = Federo({
 
 export default function Home() {
   return (
-    <div className="flex flex-col gap-36">
+    <div className="flex flex-col gap-16 md:gap-36">
       <HeroSection/>
       <AboutUsSummary/>
       <ServicesSummary/>

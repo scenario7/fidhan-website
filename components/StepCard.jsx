@@ -16,10 +16,10 @@ const federo = Federo({
 const StepCard = ({props}) => {
   return (
     <div className='flex items-start text-left gap-3'>
-        <h2 className={`${dmsans.className} font-black text-8xl bg-gradient-to-r from-[#583F26] to-[#C08E58] inline-block text-transparent bg-clip-text`}>{props.number}</h2>
+        <h2 className={`${dmsans.className} font-black text-6xl md:text-8xl bg-gradient-to-tr from-[#583F26] to-[#C08E58] inline-block text-transparent bg-clip-text`}>{props.number}</h2>
         <div className='flex flex-col items-start'>
-            <h3 className={`${dmsans.className} text-2xl font-bold tracking-tighter`}>{props.title}</h3>
-            <p className={`${dmsans.className} text-white tracking-tight`}>{props.desc}</p>
+            <h3 className={`${dmsans.className} text-xl md:text-2xl font-bold tracking-tighter`}>{props.title}</h3>
+            <p className={`${dmsans.className} text-sm md:text-md text-white tracking-tight`}>{props.desc}</p>
         </div>
     </div>
   )

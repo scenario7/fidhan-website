@@ -17,7 +17,7 @@ const CollectionCard = ({ name, imgURL, subtitle }) => {
 
   return (
     <div
-      className={`h-[300px] w-[200px] flex items-center justify-center px-2 relative transition-all duration-300`}
+      className={`md:h-[300px] md:w-[200px] flex items-center justify-center px-2 py-24 relative transition-all duration-300`}
       style={{
         backgroundImage: `linear-gradient(
           to bottom,
@@ -33,7 +33,7 @@ const CollectionCard = ({ name, imgURL, subtitle }) => {
       {hovered ? (
         <div className="text-white text-center flex flex-col items-center justify-end gap-7">
           <div>
-            <h2 className={`${federo.className} text-2xl`}>Get in Touch</h2>
+            <h2 className={`${federo.className} text-xl md:text-2xl`}>Get in Touch</h2>
             <p className={`${dmsans.className} text-sm`}>
               Reach out to us to get a quote on this personalised item.
             </p>

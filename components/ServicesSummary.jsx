@@ -14,7 +14,7 @@ const federo = Federo({
 
 const ServicesSummary = () => {
   return (
-    <div className='px-10'>
+    <div className='px-28'>
         <div className='w-1/2'>
 
         </div>

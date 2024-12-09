@@ -9,7 +9,7 @@ const dmsans = DM_Sans({
 
 const NavBar = () => {
   return (
-    <div className='flex justify-between w-full px-10 py-10 text-white'>
+    <div className='flex flex-col md:flex-row items-center gap-5 justify-between w-full px-10 py-10 text-white'>
       <Link href="/">
         <svg width="169" height="40" viewBox="0 0 169 40" fill="none" xmlns="http://www.w3.org/2000/svg">
         <path fill-rule="evenodd" clip-rule="evenodd" d="M10.0148 2.5V40H0V2.5H10.0148Z" fill="#fffff0"></path>
@@ -21,8 +21,8 @@ const NavBar = () => {
         </svg>
       </Link>
         <div className={`${dmsans.className} flex gap-10`}>
-            <a href="">Home</a>
-            <a href="">About</a>
+            <Link href="/">Home</Link>
+            <a href="/about-us">About</a>
             <a href="">Contact</a>
         </div>
     </div>

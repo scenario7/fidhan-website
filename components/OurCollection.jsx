@@ -16,9 +16,9 @@ const OurCollection = () => {
   return (
     <div className="flex items-center justify-center w-full flex-col gap-10">
       <div className="flex flex-col items-center">
-        <div className="flex gap-10 items-center mr-36">
+        <div className="flex md:gap-10 gap-3 items-center mr-10 md:mr-36">
           <h1
-            className={`${federo.className} text-8xl tracking-tighter`}
+            className={`${federo.className} text-5xl md:text-8xl tracking-tighter`}
             style={{
               background: "linear-gradient(to right, #FFFFFF, #FFD9B1)",
               WebkitBackgroundClip: "text",
@@ -27,14 +27,14 @@ const OurCollection = () => {
           >
             OUR
           </h1>
-          <p className={`${dmsans.className} text-[#FFD9B1]`}>
+          <p className={`${dmsans.className} text-[#FFD9B1] text-xs md:text-md`}>
             A combination of statement and style <br />
             helping you express who you are.
           </p>
         </div>
         <div>
           <h1
-            className={`${federo.className} text-8xl tracking-tighter ml-36`}
+            className={`${federo.className} text-5xl md:text-8xl tracking-tighter ml-20 md:ml-36`}
             style={{
               background: "linear-gradient(to right, #FFFFFF, #FFD9B1)",
               WebkitBackgroundClip: "text",
@@ -46,7 +46,7 @@ const OurCollection = () => {
         </div>
       </div>
       <div>
-        <div className='flex gap-10 w-full'>
+        <div className='grid grid-cols-2 md:grid-cols-4 md:gap-10 gap-5 px-5 w-full'>
         <CollectionCard name={"RINGS"} imageURL={"https://images.unsplash.com/photo-1511253819057-5408d4d70465?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"} subtitle={"Explore our wide collection of customisable rings."}/>
         <CollectionCard name={"NECKLACES"} imageURL="https://images.unsplash.com/photo-1511253819057-5408d4d70465?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" subtitle={"Explore our wide collection of customisable rings."}/>
         <CollectionCard name={"EARRINGS"} imageURL="https://images.unsplash.com/photo-1511253819057-5408d4d70465?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" subtitle={"Explore our wide collection of customisable rings."}/>
