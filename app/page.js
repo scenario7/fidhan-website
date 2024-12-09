@@ -19,9 +19,9 @@ export default function Home() {
       <HeroSection/>
       <AboutUsSummary/>
       <ServicesSummary/>
-      <OurCollection/>
       <WholesaleNeeds/>
       <Steps/>
+      <OurCollection/>
       <CustomFooter/>
     </div>
   );
