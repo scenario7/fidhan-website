@@ -1,5 +1,6 @@
 import React from 'react'
 import { DM_Sans, Federo } from 'next/font/google'
+import flower from '@/images/image.png'
 
 const federo = Federo({
     weight: ["400"], // Specify weights
@@ -16,7 +17,7 @@ const AboutUsSummary = () => {
         <div
             className="outline outline-[#F9C997] outline-1 flex flex-col md:flex-row"
             style={{
-                backgroundImage: `url('https://images.unsplash.com/photo-1550368566-f9cc32d7392d?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')`,
+                backgroundImage: `url(${flower.src})`,
                 backgroundSize: "cover",
                 backgroundPosition: "center",
                 width: "100%",
