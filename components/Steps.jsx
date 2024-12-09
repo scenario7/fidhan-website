@@ -18,50 +18,34 @@ const federo = Federo({
     {
         number: "1",
         title: "Develop Design",
-        desc: "We start by understanding your vision and ideas. Together, we sketch and refine the concept until it's exactly what you envisioned."
+        desc: "We begin by understanding your vision and ideas, collaborating to refine the concept until it's exactly what you envisioned."
     },
     {
         number: "2",
-        title: "Quotation",
-        desc: "This outlines the cost, materials needed, and time frame for production. You'll know exactly what to expect in terms of pricing and specifications."
+        title: "Quotation & Confirmation",
+        desc: "We provide a detailed quote outlining cost, materials, and time frame. Once approved, we confirm all details to move forward."
     },
     {
         number: "3",
         title: "Order",
-        desc: "With the design and quote approved, we're ready to bring your vision to life. We're as excited as you are to see the final product!"
+        desc: "Upon design and quote approval, we’re ready to start the production process and bring your vision to life."
     },
     {
         number: "4",
         title: "Production",
-        desc: "With the design and quote approved, we're ready to bring your vision to life. We're as excited as you are to see the final product!"
+        desc: "With attention to detail and expert craftsmanship, we create your jewelry to meet your exact specifications."
     },
     {
         number: "5",
-        title: "30% Deposit",
-        desc: "With the design and quote approved, we're ready to bring your vision to life. We're as excited as you are to see the final product!"
+        title: "Packing & Final Quality Check",
+        desc: "After production, each piece undergoes a thorough quality check and is carefully packed for delivery."
     },
     {
         number: "6",
-        title: "Confirmation",
-        desc: "With the design and quote approved, we're ready to bring your vision to life. We're as excited as you are to see the final product!"
-    },
-    {
-        number: "7",
-        title: "Packing",
-        desc: "With the design and quote approved, we're ready to bring your vision to life. We're as excited as you are to see the final product!"
-    },
-    {
-        number: "8",
-        title: "70% Balance",
-        desc: "With the design and quote approved, we're ready to bring your vision to life. We're as excited as you are to see the final product!"
-    },
-    {
-        number: "9",
         title: "Shipping",
-        desc: "With the design and quote approved, we're ready to bring your vision to life. We're as excited as you are to see the final product!"
+        desc: "Once everything is ready, we ship your order directly to you, ensuring it reaches you in perfect condition."
     }
 ];
-
 
 const Steps = () => {
   return (
