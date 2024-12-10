@@ -21,9 +21,9 @@ const NavBar = () => {
         </svg>
       </Link>
         <div className={`${dmsans.className} flex gap-10`}>
-            <Link href="/">Home</Link>
+            <a href="/services">Services</a>
             <a href="/about-us">About</a>
-            <a href="/services">Contact</a>
+            <a href="/contact-us">Contact</a>
         </div>
     </div>
   )
