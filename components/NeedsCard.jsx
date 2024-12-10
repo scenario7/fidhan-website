@@ -9,17 +9,17 @@ const federo = Federo({
   });
 
   const dmsans = DM_Sans({
-    weight: ["400"], // Specify weights
+    weight: ["400", "600", "700"], // Specify weights
     subsets: ["latin"],    // Choose subsets
   });
 
 
 export const NeedsCard = ({ props }) => {
   return (
-    <div className="flex flex-col items-center justify-center p-4 rounded-md shadow-md text-center bg-gradient-to-tr from-[#443321] to-[#161513]">
-      <div className="w-16 h-16 mb-4 bg-[#C08E58] rounded-full p-2 items-center">{props.svg}</div>
-      <h2 className={`text-md font-bold mb-2 ${dmsans.className} tracking-tight`}>{props.title}</h2>
-      <p className={`text-sm text-[#808080] text-center ${dmsans.className}`}>{props.subtitle}</p>
+    <div className="flex flex-col items-center justify-start p-4 rounded-md shadow-md text-center bg-[#C08E58] bg-opacity-60 backdrop-blur-md">
+      <div className="w-16 h-16 mb-4 bg-[#101010] rounded-full p-3 items-center">{props.svg}</div>
+      <h2 className={`text-md font-semibold mb-2 ${dmsans.className} tracking-tight`}>{props.title}</h2>
+      <p className={`text-sm text-[#d9d9d9] tracking-tight text-center ${dmsans.className}`}>{props.subtitle}</p>
     </div>
   );
 };
