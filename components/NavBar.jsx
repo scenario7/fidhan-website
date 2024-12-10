@@ -23,7 +23,7 @@ const NavBar = () => {
         <div className={`${dmsans.className} flex gap-10`}>
             <Link href="/">Home</Link>
             <a href="/about-us">About</a>
-            <a href="">Contact</a>
+            <a href="/services">Contact</a>
         </div>
     </div>
   )

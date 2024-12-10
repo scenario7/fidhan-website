@@ -97,7 +97,7 @@ const WholesaleNeeds = () => {
     <div className='flex flex-col items-center gap-6 px-5 md:px-28'>
         <h1 className={`${federo.className} text-3xl tracking-tight text-center`}> We understand wholesale needs</h1>
         <h3 className={`${dmsans.className} text-[#B6B6B6] text-center`}>We recognize the unique demands of your business. Uncover exceptional quality and one-of-a-kind designs that enhance your offerings with every stunning piece.</h3>
-        <div className='grid grid-cols-2 items-start md:grid-cols-4 md:py-10'>
+        <div className='grid grid-cols-2 md:grid-cols-4 md:py-10 gap-2 md:gap-5 items-stretch'>
             {needs.map((need) => {
                 return(
                     <NeedsCard props={need} key={need.title}/>

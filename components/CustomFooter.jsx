@@ -1,6 +1,7 @@
 import React from 'react'
 import { Federo, DM_Sans } from "next/font/google";
 import NavBar from "./NavBar";
+import Link from 'next/link';
 
 
 const federo = Federo({
@@ -17,6 +18,7 @@ const CustomFooter = () => {
   return (
     <div className='flex flex-col md:flex-row items-center justify-between px-10 py-10 w-screen'>
         <div className='flex flex-col items-center md:items-start gap-10'>
+        <Link href="/">
         <svg viewBox="0 0 169 40" fill="none" xmlns="http://www.w3.org/2000/svg" className='w-32 md:w-52'>
         <path fillRule="evenodd" clipRule="evenodd" d="M10.0148 2.5V40H0V2.5H10.0148Z" fill="#fffff0"></path>
         <path fillRule="evenodd" clipRule="evenodd" d="M15.0222 2.5H36.3037C43.2175 2.5 48.8222 8.09644 48.8222 15C48.8222 21.9036 43.2175 27.5 36.3037 27.5H25.037V40H15.0222V2.5ZM25.037 17.5H36.3037C37.6865 17.5 38.8074 16.3807 38.8074 15C38.8074 13.6193 37.6865 12.5 36.3037 12.5H25.037V17.5Z" fill="#fffff0"></path>
@@ -25,15 +27,15 @@ const CustomFooter = () => {
         <path d="M169 3.75C169 5.82107 167.319 7.5 165.244 7.5C163.17 7.5 161.489 5.82107 161.489 3.75C161.489 1.67893 163.17 0 165.244 0C167.319 0 169 1.67893 169 3.75Z" fill="#fffff0"></path>
         <path d="M123.42 40L128.199 20.0181L131.752 32.0393C133.87 39.2091 144.041 39.2091 146.16 32.0393L149.712 20.0181L154.491 40H164.787L157.273 8.57949C155.486 1.10744 144.941 0.830781 142.763 8.19891L138.956 21.0833L135.148 8.19892C132.971 0.830824 122.425 1.1074 120.638 8.57948L113.124 40H123.42Z" fill="#fffff0"></path>
         </svg>
+        </Link>
         <p className={`text-[#808080] text-center md:text-left ${dmsans.className}`}>
         Shop No. 23,<br/>Crystal Plaza Building,<br/>Linking Road, Bandra West,<br/>Mumbai, Maharashtra 400050, India
         </p>
         </div>
         <div className={`flex flex-col items-end text-right ${dmsans.className} hidden sm:flex`}>
-          <a>Home</a>
-          <a>About Us</a>
-          <a>Careers</a>
-          <a>Collections</a>
+          <Link href="/">Home</Link>
+          <a href='/about-us'>About Us</a>
+          <a href='/services'>Services</a>
           <a>Contact Us</a>     
       </div>
 
