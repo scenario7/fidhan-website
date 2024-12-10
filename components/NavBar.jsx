@@ -20,7 +20,7 @@ const NavBar = () => {
         <path d="M123.42 40L128.199 20.0181L131.752 32.0393C133.87 39.2091 144.041 39.2091 146.16 32.0393L149.712 20.0181L154.491 40H164.787L157.273 8.57949C155.486 1.10744 144.941 0.830781 142.763 8.19891L138.956 21.0833L135.148 8.19892C132.971 0.830824 122.425 1.1074 120.638 8.57948L113.124 40H123.42Z" fill="#fffff0"></path>
         </svg>
       </Link>
-        <div className={`${dmsans.className} flex gap-10`}>
+        <div className={`${dmsans.className} md:text-md text-sm flex gap-5 md:gap-10`}>
             <a href="/services">Services</a>
             <a href="/about-us">About</a>
             <a href="/contact-us">Contact</a>
