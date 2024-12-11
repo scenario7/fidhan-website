@@ -258,7 +258,7 @@ const page = ({ params }) => {
   return (
     <div className='flex flex-col items-center'>
           <NavBar/>
-          <div className='flex flex-col items-center gap-3 py-10 px-10 md:px-0'>
+          <div className='flex flex-col items-center gap-3 py-10 px-3 md:px-0'>
               <h3 className={`${dmsans.className} text-[#d9d9d9] tracking-tight`}>Explore how we help with</h3>
               <div className='w-40 md:w-80 bg-gradient-to-r from-[#101010] via-[#AE7C53] to-[#101010] h-[2px]'></div>
               <h1 className={`${federo.className} text-4xl md:text-6xl tracking-tight bg-gradient-to-r from-[#FFFFFF] to-[#AE7C53] inline-block text-transparent bg-clip-text text-center`}>{service.title}</h1>
