@@ -20,7 +20,7 @@ const CustomFooter = () => {
     <div className='flex flex-col md:flex-row items-center justify-between px-10 py-10 w-screen'>
         <div className='flex flex-col items-center md:items-start gap-10'>
         <Link href="/">
-          <Image src={blackLogo} height={100}/>
+          <Image src={blackLogo} height={100} alt='Logo'/>
         </Link>
         <p className={`text-[#808080] text-center md:text-left ${dmsans.className}`}>
         Shop No. 23,<br/>Crystal Plaza Building,<br/>Linking Road, Bandra West,<br/>Mumbai, Maharashtra 400050, India

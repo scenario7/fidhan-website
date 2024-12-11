@@ -12,6 +12,30 @@ const dmsans = DM_Sans({
   subsets: ["latin"], // Choose subsets
 });
 
+const collection = [
+  {
+    title : "RINGS",
+    imgURL : "https://images.unsplash.com/photo-1511253819057-5408d4d70465?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    subtitle : "Explore our wide collection of customisable rings."
+  },
+  {
+    title : "NECKLACES",
+    imgURL : "https://plus.unsplash.com/premium_photo-1681276170758-d6ca6e6e276a?q=80&w=2787&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    subtitle : "Explore our wide collection of customisable rings."
+  },
+  {
+    title : "BRACELETS",
+    imgURL : "https://plus.unsplash.com/premium_photo-1692392182108-e9c8a36a80d9?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    subtitle : "Explore our wide collection of customisable rings."
+  },
+  {
+    title : "EARRINGS",
+    imgURL : "https://plus.unsplash.com/premium_photo-1681276169450-4504a2442173?q=80&w=2787&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    subtitle : "Explore our wide collection of customisable rings."
+  },
+]
+
+
 const OurCollection = () => {
   return (
     <div className="flex items-center justify-center w-full flex-col gap-10">
@@ -47,10 +71,11 @@ const OurCollection = () => {
       </div>
       <div>
         <div className='grid grid-cols-2 md:grid-cols-4 md:gap-10 gap-5 px-5 w-full'>
-        <CollectionCard name={"RINGS"} imageURL={"https://images.unsplash.com/photo-1511253819057-5408d4d70465?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"} subtitle={"Explore our wide collection of customisable rings."}/>
-        <CollectionCard name={"NECKLACES"} imageURL="https://images.unsplash.com/photo-1511253819057-5408d4d70465?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" subtitle={"Explore our wide collection of customisable rings."}/>
-        <CollectionCard name={"EARRINGS"} imageURL="https://images.unsplash.com/photo-1511253819057-5408d4d70465?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" subtitle={"Explore our wide collection of customisable rings."}/>
-        <CollectionCard name={"BRACELETS"} imageURL="https://images.unsplash.com/photo-1511253819057-5408d4d70465?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" subtitle={"Explore our wide collection of customisable rings."}/>
+          {collection.map((col) => {
+            return(
+              <CollectionCard params={col} key={col}/>
+            )
+          })}
         </div>
       </div>
     </div>

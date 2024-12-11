@@ -1,6 +1,7 @@
 import React from 'react'
 import { DM_Sans, Federo } from 'next/font/google'
 import flower from '@/images/image.png'
+import Link from 'next/link';
 
 const federo = Federo({
     weight: ["400"], // Specify weights
@@ -29,14 +30,14 @@ const AboutUsSummary = () => {
                     ABOUT US
                 </h2>
                 <h1 className={`${dmsans.className} text-3xl tracking-tighter`}>
-                    Learn What we do at Ipsum
+                    Learn What we do at Q Stone Designs
                 </h1>
                 <p className={`${dmsans.className} text-[#b5b5b5] tracking-tighter`}>
                     A tribute to natures elegance and timeless beauty. Each piece in this collection captures the delicate intricacies of blooming petals, crafted with precision and adorned with vibrant gemstones to mirror the colors of a blossoming garden.
                 </p>
-                <button className={`${dmsans.className} outline outline-white px-2 py-1 outline-1 rounded-lg`}>
+                <Link href="/about-us" className={`${dmsans.className} outline outline-white px-2 py-1 outline-1 rounded-lg`}>
                     Read More &rarr;
-                </button>
+                </Link>
             </div>
         </div>
     );

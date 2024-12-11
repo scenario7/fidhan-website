@@ -52,7 +52,7 @@ const page = () => {
             {missions.map((mission) => {
                 return(
                     <div className='flex flex-col items-center gap-2 md:gap-5' key={mission}>
-                        <Image src={mission.icon} className='md:h-16 h-16 object-contain'/>
+                        <Image src={mission.icon} className='md:h-16 h-16 object-contain' alt='icon'/>
                         <h3 className={`${dmsans.className} text-xl font-semibold tracking-tight`}>{mission.title}</h3>
                         <p className={`${dmsans.className} text-[#808080] text-center`}>{mission.desc}</p>
                     </div>

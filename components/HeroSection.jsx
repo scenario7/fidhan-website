@@ -1,6 +1,7 @@
 import React from "react";
 import { Federo, DM_Sans } from "next/font/google";
 import NavBar from "./NavBar";
+import Link from "next/link";
 
 
 const federo = Federo({
@@ -29,9 +30,9 @@ const HeroSection = () => {
         <h1 className={`${federo.className} text-5xl md:text-6xl`}>Crafted with excellence,<br/> worn with pride.</h1>
         <p className={`${dmsans.className} md:w-1/4`}>Our curated collection showcases the finest craftsmanship, featuring pieces that radiate sophistication and celebrate the art of adornment.</p>
         </div>
-        <button className={`${dmsans.className} outline outline-1 outline-white px-3 py-1 rounded-lg hover:bg-white hover:text-black transition-colors`}>
+        <Link href='/services' className={`${dmsans.className} outline outline-1 outline-white px-3 py-1 rounded-lg hover:bg-white hover:text-black transition-colors`}>
             Explore Offerings →
-        </button>
+        </Link>
     </div>
   );
 };
