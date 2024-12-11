@@ -4,6 +4,8 @@ import NavBar from "./NavBar";
 import Link from 'next/link';
 import blackLogo from '@/images/qstone-logo-blackbg.png'
 import Image from 'next/image'
+import whiteBG from '@/images/logo-white-bg.png'
+
 
 const federo = Federo({
     weight: ["400"], // Specify weights
@@ -20,7 +22,7 @@ const CustomFooter = () => {
     <div className='flex flex-col md:flex-row items-center justify-between px-10 py-10 w-screen'>
         <div className='flex flex-col items-center md:items-start gap-10'>
         <Link href="/">
-          <Image src={blackLogo} height={100} alt='Logo'/>
+          <Image src={whiteBG} height={100} alt='Logo' className='rounded-full'/>
         </Link>
         <p className={`text-[#808080] text-center md:text-left ${dmsans.className}`}>
         Shop No. 23,<br/>Crystal Plaza Building,<br/>Linking Road, Bandra West,<br/>Mumbai, Maharashtra 400050, India
