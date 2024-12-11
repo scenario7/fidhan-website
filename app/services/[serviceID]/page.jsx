@@ -165,7 +165,7 @@ const page = ({ params }) => {
           <div className='py-10 grid grid-cols-1 md:grid-cols-3 text-center gap-10 px-10 md:px-28'>
             {service.highlights.map((highlight) => {
               return(
-                <div className='flex flex-col gap-5'>
+                <div className='flex flex-col gap-5' key={highlight}>
                   <h3 className={`${federo.className} text-xl md:text-2xl font-bold text-[#eeba81]`}>{highlight.title}</h3>
                   <p className={`${dmsans.className} md:text-md text-sm tracking-tighter`}>{highlight.description}</p>
                 </div>

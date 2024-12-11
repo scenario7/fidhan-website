@@ -21,7 +21,7 @@ const NavBar = () => {
         </svg>
       </Link>
         <div className={`${dmsans.className} md:text-md text-sm flex gap-5 md:gap-10`}>
-            <a href="/services">Services</a>
+            <Link href="/services">Services</Link>
             <a href="/about-us">About</a>
             <a href="/contact-us">Contact</a>
         </div>
