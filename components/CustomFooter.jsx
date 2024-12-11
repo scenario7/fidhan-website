@@ -29,7 +29,7 @@ const CustomFooter = () => {
         <div className={`flex flex-col items-end text-right ${dmsans.className} hidden sm:flex`}>
           <Link href="/">Home</Link>
           <a href='/about-us'>About Us</a>
-          <a href='/services'>Services</a>
+          <Link href='/services'>Services</Link>
           <a>Contact Us</a>     
       </div>
 

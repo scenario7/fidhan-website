@@ -1,5 +1,6 @@
 import React from 'react';
 import { Federo, DM_Sans } from "next/font/google";
+import Link from 'next/link';
 
 const federo = Federo({
     weight: ["400"], // Specify weights
@@ -13,7 +14,7 @@ const dmsans = DM_Sans({
 
 const ServiceCard = ({ title, bgImageURL }) => {
     return (
-        <a href='/services'>
+        <Link href='/services'>
         <div
             className="relative flex justify-between items-center px-3 py-7 w-full text-white"
             style={{
@@ -41,7 +42,7 @@ const ServiceCard = ({ title, bgImageURL }) => {
             </svg>
             <div className="absolute inset-0 bg-gradient-to-r from-[#101010] to-transparent"></div>
         </div>
-        </a>
+        </Link>
     );
 };
 
