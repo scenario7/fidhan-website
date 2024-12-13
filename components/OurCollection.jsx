@@ -15,22 +15,22 @@ const dmsans = DM_Sans({
 const collection = [
   {
     title : "RINGS",
-    imgURL : "https://images.unsplash.com/photo-1511253819057-5408d4d70465?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    imgURL : "https://images.pexels.com/photos/2849742/pexels-photo-2849742.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
     subtitle : "Explore our wide collection of customisable rings."
   },
   {
     title : "NECKLACES",
-    imgURL : "https://plus.unsplash.com/premium_photo-1681276170758-d6ca6e6e276a?q=80&w=2787&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    imgURL : "https://images.pexels.com/photos/7541808/pexels-photo-7541808.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
     subtitle : "Explore our wide collection of customisable rings."
   },
   {
     title : "BRACELETS",
-    imgURL : "https://plus.unsplash.com/premium_photo-1692392182108-e9c8a36a80d9?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    imgURL : "https://images.pexels.com/photos/266621/pexels-photo-266621.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
     subtitle : "Explore our wide collection of customisable rings."
   },
   {
     title : "EARRINGS",
-    imgURL : "https://plus.unsplash.com/premium_photo-1681276169450-4504a2442173?q=80&w=2787&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    imgURL : "https://images.pexels.com/photos/25403216/pexels-photo-25403216/free-photo-of-silver-jewelry-on-black-background.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
     subtitle : "Explore our wide collection of customisable rings."
   },
 ]
@@ -44,7 +44,7 @@ const OurCollection = () => {
           <h1
             className={`${federo.className} text-5xl md:text-8xl tracking-tighter`}
             style={{
-              background: "linear-gradient(to right, #101010, #FFD9B1)",
+              background: "linear-gradient(to right, #f5c898, #C08E58)",
               WebkitBackgroundClip: "text",
               WebkitTextFillColor: "transparent",
             }}
@@ -60,7 +60,7 @@ const OurCollection = () => {
           <h1
             className={`${federo.className} text-5xl md:text-8xl tracking-tighter ml-20 md:ml-36`}
             style={{
-              background: "linear-gradient(to right, #101010, #FFD9B1)",
+              background: "linear-gradient(to right, #f5c898, #C08E58)",
               WebkitBackgroundClip: "text",
               WebkitTextFillColor: "transparent",
             }}

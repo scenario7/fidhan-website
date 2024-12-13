@@ -151,7 +151,7 @@ const ServicesSummary = () => {
     return (
         <div className="flex flex-col gap-10 px-10 md:px-28">
             <div className="text-center">
-                <h1 className={`${federo.className} text-black text-3xl`}>
+                <h1 className={`${federo.className} text-[#C08E58] text-3xl`}>
                     Explore our Services and Offerings
                 </h1>
             </div>
