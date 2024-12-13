@@ -19,6 +19,7 @@
               id: 'jewellery-manufacturing',
               title: 'Jewellery Manufacturing',
               image: 'https://images.unsplash.com/photo-1517348663636-31103cb49587?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+              shortdesc : 'We specialize in the full-scale manufacturing of fine jewelry, delivering pieces that meet your brands highest standards. From prototype to production, we handle every detail with precision, using the finest materials and the latest technology. Whether youre producing small batch or large-scale orders, we ensure that your products are crafted with the utmost care and attention to detail.',
               description: `Qstone Designs is a leading jewelry manufacturer with facilities in both India and Dubai, specializing in high-quality jewelry in gold, diamond, platinum, and silver. Offering 10-24 karats, we focus on precision and attention to detail. Our expertise spans diamond and gemstone settings, catering to diverse retailer needs. We provide customized solutions, ensuring your jewelry is tailored to your exact specifications.`,
               highlights: [
                 {
@@ -62,6 +63,7 @@
             {
               id: 'cad-rendering',
               title: 'CAD and 3D Rendering',
+              shortdesc : 'Using state-of-the-art CAD (Computer-Aided Design) software and 3D rendering technologies, we bring your designs to life in precise digital formats. Our team generates photorealistic renderings and detailed CAD models that allow you to visualize your designs in the most accurate way before moving forward with production.',
               image: 'https://images.unsplash.com/photo-1501046791521-e24baf06e55b?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
               description: `Qstone Designs utilizes advanced CAD and 3D rendering technology to bring your jewelry designs to life. Our detailed virtual models ensure that your designs are realized precisely as envisioned before physical production begins.`,
               highlights: [
@@ -82,6 +84,7 @@
             {
               id: 'diamonds-and-gemstones',
               title: 'Diamonds and Gemstones',
+              shortdesc : 'We are proud to offer both natural diamonds and lab-grown diamonds, providing flexible options depending on your client’s preferences. All of our diamonds and gemstones come with GIA (Gemological Institute of America) and IGI (International Gemological Institute) certifications, ensuring that each stone meets the highest standards for quality, authenticity, and ethical sourcing.',
               image: 'https://images.unsplash.com/photo-1547584322-003a00006db0?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
               description: `At Qstone Designs, we source top-quality mined and lab-grown diamonds, as well as gemstones from trusted suppliers worldwide. Our expertise in the Four Cs ensures each diamond and gemstone meets the highest standards.`,
               highlights: [
@@ -102,6 +105,7 @@
             {
               id: 'jewellery-packaging',
               title: 'Jewellery Packaging Solutions',
+              shortdesc : 'At Q Stone Designs, we offer customized packaging through our dedicated packaging brand, designed to enhance your jewelrys presentation. Our luxury packaging combines elegance, functionality, and durability, using high-quality materials like velvet linings and eco-friendly options. We work with you to create bespoke designs that reflect your brands style, ensuring your jewelry is beautifully protected and showcased.',
               image: 'https://images.unsplash.com/photo-1595246007497-15e0ed4b8d96?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
               description: `Qstone Designs offers bespoke packaging solutions tailored to enhance your brand's image. From luxury boxes to eco-friendly packaging, we ensure your jewelry is beautifully presented and protected.`,
               highlights: [
