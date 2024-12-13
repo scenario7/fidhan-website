@@ -196,7 +196,7 @@
                       {service.title}
                     </h2>
                     <p className={`${dmsans.className} md:text-md text-sm text-white`}>
-                      {service.description}
+                      {service.shortdesc}
                     </p>
                     <a
                       className={`${dmsans.className} px-3 py-1 rounded-lg hover:bg-white hover:text-black text-white transition-colors`}
