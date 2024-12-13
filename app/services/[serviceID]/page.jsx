@@ -115,7 +115,7 @@ const federo = Federo({
       id: 'diamonds-and-gemstones',
       title: 'Diamonds and Gemstones',
       diamondDescription : (
-        <div className={`${dmsans.className} text-[#101010] flex flex-col gap-5 pt-10 text-[#d9d9d9] tracking-tight px-10 md:px-28 text-center`}>
+        <div className={`${dmsans.className} text-[#101010] flex flex-col gap-5 pt-10 tracking-tight px-10 md:px-28 text-center`}>
           <p>
           At Qstone Designs, we support retailers in sourcing the finest mined and lab-grown diamonds, along with other gemstones, from across the globe. We specialize in finding the finest diamonds for your jewelry, focusing on the Four Cs – Cut, Color, Clarity, and Carat. Our dedication is to provide you with top-quality gems from trusted suppliers, ensuring your complete satisfaction with every exceptional piece we craft.
           </p>
@@ -166,7 +166,7 @@ const federo = Federo({
       id: 'jewellery-packaging',
       title: 'Jewellery Packaging Solutions',
       packagingDesc : (
-        <div className={`${dmsans.className} text-[#101010] flex flex-col gap-5 pt-10 text-[#d9d9d9] tracking-tight px-10 md:px-28 text-center`}>
+        <div className={`${dmsans.className} text-[#101010] flex flex-col gap-5 pt-10 tracking-tight px-10 md:px-28 text-center`}>
           <p>At QStone, we are dedicated to offering the best possible service and ensuring that your brand&apos;s packaging needs are met with precision and care. We are confident in our ability to provide the perfect packaging solution tailored to your products and brand.</p>
           <p>Here are a few ways QStone can assist you with your packaging needs:</p>
           <div>
@@ -189,7 +189,7 @@ const federo = Federo({
       id: 'jewellery-repair',
       title: 'Jewellery Repair',
       repairDesc : (
-        <div className={`${dmsans.className} text-[#101010] flex flex-col gap-5 pt-10 text-[#d9d9d9] tracking-tight px-10 md:px-28 text-left`}>
+        <div className={`${dmsans.className} text-[#101010] flex flex-col gap-5 pt-10 tracking-tight px-10 md:px-28 text-left`}>
           <p>At Qstone Designs, we understand the sentimental value your jewelry holds. When it comes to jewelry repairs, you need a trusted partner who delivers reliable and expert services. Whatever your repair needs may be, we are here to help restore your precious pieces to their original beauty.</p>
           <p>Our repair services include:</p>
           <ul className='list-disc list-inside'>
