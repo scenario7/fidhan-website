@@ -12,13 +12,13 @@ const dmsans = DM_Sans({
     subsets: ["latin"], // Choose subsets
 });
 
-const ServiceCard = ({ title, bgImageURL }) => {
+const ServiceCard = ({ title, bgImageURL, id }) => {
     return (
-        <Link href='/services'>
+        <Link href={`/services/${id}`}>
         <div
             className="relative flex justify-between items-center px-3 py-7 w-full text-white"
             style={{
-                backgroundImage: `linear-gradient(to right, #10101020, rgba(16, 16, 16, 0)), url(${bgImageURL})`,
+                backgroundImage: `linear-gradient(to right, #fffff020, rgba(16, 16, 16, 0)), url(${bgImageURL})`,
                 backgroundSize: "cover",
                 backgroundPosition: "center",
             }}

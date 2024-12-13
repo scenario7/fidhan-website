@@ -18,7 +18,7 @@ const CollectionCard = ({params}) => {
 
   return (
     <div
-      className={`md:h-[300px] md:w-[200px] flex items-center justify-center px-2 py-24 relative transition-all duration-300`}
+      className={`md:h-[300px] md:w-[200px] flex items-center justify-center px-2 py-24 relative transition-all duration-300 shadow-sm md:hover:shadow-sm md:shadow-xl shadow-[#adadad]`}
       style={{
         backgroundImage: `linear-gradient(
           to bottom,

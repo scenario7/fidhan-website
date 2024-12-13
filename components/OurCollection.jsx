@@ -44,14 +44,14 @@ const OurCollection = () => {
           <h1
             className={`${federo.className} text-5xl md:text-8xl tracking-tighter`}
             style={{
-              background: "linear-gradient(to right, #FFFFFF, #FFD9B1)",
+              background: "linear-gradient(to right, #101010, #FFD9B1)",
               WebkitBackgroundClip: "text",
               WebkitTextFillColor: "transparent",
             }}
           >
             OUR
           </h1>
-          <p className={`${dmsans.className} text-[#FFD9B1] text-xs md:text-md`}>
+          <p className={`${dmsans.className} text-[#101010] text-xs md:text-md`}>
             A combination of statement and style <br />
             helping you express who you are.
           </p>
@@ -60,7 +60,7 @@ const OurCollection = () => {
           <h1
             className={`${federo.className} text-5xl md:text-8xl tracking-tighter ml-20 md:ml-36`}
             style={{
-              background: "linear-gradient(to right, #FFFFFF, #FFD9B1)",
+              background: "linear-gradient(to right, #101010, #FFD9B1)",
               WebkitBackgroundClip: "text",
               WebkitTextFillColor: "transparent",
             }}

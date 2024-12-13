@@ -146,10 +146,10 @@
             <div className='flex flex-col items-center'>
                 <NavBar/>
                 <div className='flex flex-col items-center gap-3 py-10 px-10 md:px-0'>
-                    <h3 className={`${dmsans.className} text-[#d9d9d9] tracking-tight`}>Because Your Style Deserves Uniqueness</h3>
-                    <div className='w-40 md:w-80 bg-gradient-to-r from-[#101010] via-[#AE7C53] to-[#101010] h-[2px]'></div>
-                    <h1 className={`${federo.className} text-5xl md:text-6xl tracking-tight bg-gradient-to-r from-[#FFFFFF] to-[#AE7C53] inline-block text-transparent bg-clip-text`}>Our Services</h1>
-                    <p className={`${dmsans.className} text-white md:text-md text-sm tracking-tight md:px-28 text-center`}>Crafted with precision and passion, our jewelry is designed to reflect your individuality, offering timeless elegance that complements your unique style and grace.</p>
+                    <h3 className={`${dmsans.className} text-[#101010] tracking-tight`}>Because Your Style Deserves Uniqueness</h3>
+                    <div className='w-40 md:w-80 bg-gradient-to-r from-[#ffffff] via-[#AE7C53] to-[#ffffff] h-[2px]'></div>
+                    <h1 className={`${federo.className} text-5xl md:text-6xl tracking-tight bg-gradient-to-r from-[#101010] to-[#AE7C53] inline-block text-transparent bg-clip-text`}>Our Services</h1>
+                    <p className={`${dmsans.className} text-black md:text-md tracking-tight md:px-28 text-center`}>Crafted with precision and passion, our jewelry is designed to reflect your individuality, offering timeless elegance that complements your unique style and grace.</p>
                 </div>
                 <div className="flex flex-col py-10">
             {services.map((service, index) => {
@@ -171,13 +171,13 @@
                                 isEven ? "md:w-1/2 px-10 md:px-28 text-center md:text-left" : "md:w-1/2 px-10 md:px-28 text-center ml-auto md:text-right"
                             } flex flex-col gap-5`}
                         >
-                            <h2 className={`${dmsans.className} text-2xl md:text-3xl font-medium`}>
+                            <h2 className={`${dmsans.className} text-2xl md:text-3xl font-medium text-white`}>
                                 {service.title}
                             </h2>
-                            <p className={`${dmsans.className} md:text-md text-sm shadow-md`}>
+                            <p className={`${dmsans.className} md:text-md text-sm text-white`}>
                                 {service.description}
                             </p>
-                            <a className={`${dmsans.className} px-3 py-1 rounded-lg hover:bg-white hover:text-black transition-colors`} href={`/services/${service.id}`}>
+                            <a className={`${dmsans.className} px-3 py-1 rounded-lg hover:bg-white hover:text-black text-white transition-colors`} href={`/services/${service.id}`}>
                                 Explore Offerings →
                             </a>
                         </div>

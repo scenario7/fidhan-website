@@ -25,17 +25,17 @@ const AboutUsSummary = () => {
             }}
         >
             <div className="w-full md:w-1/2 h-[200px] md:h-auto"></div>
-            <div className="w-full md:w-1/2 bg-[#1b1b1b] bg-opacity-70 backdrop-blur-sm gap-5 md:gap-10 px-10 py-10 items-start justify-between flex flex-col">
-                <h2 className={`${federo.className} text-[#F9C997]`}>
+            <div className="w-full md:w-1/2 bg-[#fffff0] bg-opacity-70 backdrop-blur-sm gap-5 md:gap-10 px-10 py-10 items-start justify-between flex flex-col">
+                <h2 className={`${federo.className} text-[#503314]`}>
                     ABOUT US
                 </h2>
                 <h1 className={`${dmsans.className} text-3xl tracking-tighter`}>
                     Learn What we do at Q Stone Designs
                 </h1>
-                <p className={`${dmsans.className} text-[#b5b5b5] tracking-tighter`}>
+                <p className={`${dmsans.className} text-[#101010] tracking-tighter`}>
                     A tribute to natures elegance and timeless beauty. Each piece in this collection captures the delicate intricacies of blooming petals, crafted with precision and adorned with vibrant gemstones to mirror the colors of a blossoming garden.
                 </p>
-                <Link href="/about-us" className={`${dmsans.className} outline outline-white px-2 py-1 outline-1 rounded-lg`}>
+                <Link href="/about-us" className={`${dmsans.className} outline outline-black px-2 py-1 outline-1 rounded-lg hover:bg-black hover:text-white transition`}>
                     Read More &rarr;
                 </Link>
             </div>

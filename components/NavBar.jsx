@@ -12,7 +12,7 @@ const dmsans = DM_Sans({
 
 const NavBar = () => {
   return (
-    <div className='flex flex-col md:flex-row items-center gap-5 justify-between w-full px-10 py-10 text-white'>
+    <div className='flex flex-col md:flex-row items-center gap-5 justify-between w-full px-10 py-10 text-black relative'>
       <Link href="/">
         <Image src={whiteBG} height={100} alt='Logo' className='rounded-full'/>
       </Link>

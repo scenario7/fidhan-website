@@ -49,7 +49,7 @@ const federo = Federo({
       id: 'jewellery-manufacturing',
       title: 'Jewellery Manufacturing',
       image: 'https://images.unsplash.com/photo-1517348663636-31103cb49587?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
-      manufactureDesc : (<div className={`${dmsans.className} flex flex-col gap-5 pt-10 text-[#d9d9d9] tracking-tight px-10 md:px-28 text-center`}><p>Qstone Designs is a leading jewelry manufacturer with manufacturing facilities in both India and Dubai, specializing in the production of high-quality jewelry in gold, diamond, platinum, and silver. We offer an extensive range of jewelry from 10 to 24 karats, crafted with precision and attention to detail. Our expertise spans across diamond and gemstone setting, providing exquisite and durable designs that cater to the diverse needs of jewelry retailers, from small businesses to large enterprises.</p> <p> At Qstone Designs, we pride ourselves on offering customized solutions for each of our clients. Whether you require intricate mechanical components, unique materials, or specific finishes, our team is dedicated to tailoring the manufacturing process to your exact specifications. We create a wide variety of finishes, stone settings, and platings, ensuring every piece is crafted with precision and artistry.
+      manufactureDesc : (<div className={`${dmsans.className} text-[#101010] flex flex-col gap-5 pt-10 text-[#d9d9d9] tracking-tight px-10 md:px-28 text-center`}><p>Qstone Designs is a leading jewelry manufacturer with manufacturing facilities in both India and Dubai, specializing in the production of high-quality jewelry in gold, diamond, platinum, and silver. We offer an extensive range of jewelry from 10 to 24 karats, crafted with precision and attention to detail. Our expertise spans across diamond and gemstone setting, providing exquisite and durable designs that cater to the diverse needs of jewelry retailers, from small businesses to large enterprises.</p> <p> At Qstone Designs, we pride ourselves on offering customized solutions for each of our clients. Whether you require intricate mechanical components, unique materials, or specific finishes, our team is dedicated to tailoring the manufacturing process to your exact specifications. We create a wide variety of finishes, stone settings, and platings, ensuring every piece is crafted with precision and artistry.
  </p><p> Our commitment to innovation and quality, combined with competitive pricing, makes us a trusted partner for jewelry retailers worldwide. Whether you&apos;re looking for a classic design or a bespoke creation with a distinctive finish, Qstone Designs delivers superior craftsmanship that reflects your brand&apos;s vision.</p></div>),
       description: `Qstone Designs is a leading jewelry manufacturer with facilities in both India and Dubai, specializing in high-quality jewelry in gold, diamond, platinum, and silver. Offering 10-24 karats, we focus on precision and attention to detail. Our expertise spans diamond and gemstone settings, catering to diverse retailer needs. We provide customized solutions, ensuring your jewelry is tailored to your exact specifications.`,
       highlights: [
@@ -89,6 +89,14 @@ const federo = Federo({
           title: 'Jewelry Plating',
           description: 'We offer 14K, 18K, rose gold, and rhodium gold plating, depending on customer requirements.'
         },
+      ]
+    },
+    {
+      id: 'cad-rendering',
+      title: 'CAD and 3D Rendering',
+      image: 'https://images.unsplash.com/photo-1501046791521-e24baf06e55b?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+      description: `Qstone Designs utilizes advanced CAD and 3D rendering technology to bring your jewelry designs to life. Our detailed virtual models ensure that your designs are realized precisely as envisioned before physical production begins.`,
+      highlights: [
         {
           title: 'Jewelry 3D Modelling',
           description: 'At Qstone Designs, we combine the artistry of traditional craftsmanship with the power of cutting-edge technology to offer exceptional Jewelry 3D Modeling services. Our advanced techniques allow us to create detailed virtual models of your jewelry designs, bringing your creative ideas to life before physical production begins. This seamless integration of innovation and precision ensures that your designs are realized exactly as envisioned, while staying true to our commitment to superior craftsmanship.'
@@ -104,30 +112,10 @@ const federo = Federo({
       ]
     },
     {
-      id: 'cad-rendering',
-      title: 'CAD and 3D Rendering',
-      image: 'https://images.unsplash.com/photo-1501046791521-e24baf06e55b?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
-      description: `Qstone Designs utilizes advanced CAD and 3D rendering technology to bring your jewelry designs to life. Our detailed virtual models ensure that your designs are realized precisely as envisioned before physical production begins.`,
-      highlights: [
-        {
-          title: 'Jewelry 3D Modeling',
-          description: 'Combines traditional craftsmanship with cutting-edge technology to create detailed virtual designs.'
-        },
-        {
-          title: 'Jewelry CAM',
-          description: '3D Rapid Prototyping System ensures high accuracy and detail in resin models.'
-        },
-        {
-          title: 'Jewelry Rendering',
-          description: 'High-quality visuals for marketing and customer previews, saving time and costs before production.'
-        }
-      ]
-    },
-    {
       id: 'diamonds-and-gemstones',
       title: 'Diamonds and Gemstones',
       diamondDescription : (
-        <div className={`${dmsans.className} flex flex-col gap-5 pt-10 text-[#d9d9d9] tracking-tight px-10 md:px-28 text-center`}>
+        <div className={`${dmsans.className} text-[#101010] flex flex-col gap-5 pt-10 text-[#d9d9d9] tracking-tight px-10 md:px-28 text-center`}>
           <p>
           At Qstone Designs, we support retailers in sourcing the finest mined and lab-grown diamonds, along with other gemstones, from across the globe. We specialize in finding the finest diamonds for your jewelry, focusing on the Four Cs – Cut, Color, Clarity, and Carat. Our dedication is to provide you with top-quality gems from trusted suppliers, ensuring your complete satisfaction with every exceptional piece we craft.
           </p>
@@ -178,7 +166,7 @@ const federo = Federo({
       id: 'jewellery-packaging',
       title: 'Jewellery Packaging Solutions',
       packagingDesc : (
-        <div className={`${dmsans.className} flex flex-col gap-5 pt-10 text-[#d9d9d9] tracking-tight px-10 md:px-28 text-center`}>
+        <div className={`${dmsans.className} text-[#101010] flex flex-col gap-5 pt-10 text-[#d9d9d9] tracking-tight px-10 md:px-28 text-center`}>
           <p>At QStone, we are dedicated to offering the best possible service and ensuring that your brand&apos;s packaging needs are met with precision and care. We are confident in our ability to provide the perfect packaging solution tailored to your products and brand.</p>
           <p>Here are a few ways QStone can assist you with your packaging needs:</p>
           <div>
@@ -201,7 +189,7 @@ const federo = Federo({
       id: 'jewellery-repair',
       title: 'Jewellery Repair',
       repairDesc : (
-        <div className={`${dmsans.className} flex flex-col gap-5 pt-10 text-[#d9d9d9] tracking-tight px-10 md:px-28 text-left`}>
+        <div className={`${dmsans.className} text-[#101010] flex flex-col gap-5 pt-10 text-[#d9d9d9] tracking-tight px-10 md:px-28 text-left`}>
           <p>At Qstone Designs, we understand the sentimental value your jewelry holds. When it comes to jewelry repairs, you need a trusted partner who delivers reliable and expert services. Whatever your repair needs may be, we are here to help restore your precious pieces to their original beauty.</p>
           <p>Our repair services include:</p>
           <ul className='list-disc list-inside'>
@@ -259,9 +247,9 @@ const page = ({ params }) => {
     <div className='flex flex-col items-center'>
           <NavBar/>
           <div className='flex flex-col items-center gap-3 py-10 px-3 md:px-0'>
-              <h3 className={`${dmsans.className} text-[#d9d9d9] tracking-tight`}>Explore how we help with</h3>
-              <div className='w-40 md:w-80 bg-gradient-to-r from-[#101010] via-[#AE7C53] to-[#101010] h-[2px]'></div>
-              <h1 className={`${federo.className} text-4xl md:text-6xl tracking-tight bg-gradient-to-r from-[#FFFFFF] to-[#AE7C53] inline-block text-transparent bg-clip-text text-center`}>{service.title}</h1>
+              <h3 className={`${dmsans.className} text-[#101010] tracking-tight`}>Explore how we help with</h3>
+              <div className='w-40 md:w-80 bg-gradient-to-r from-[#ffffff] via-[#AE7C53] to-[#ffffff] h-[2px]'></div>
+              <h1 className={`${federo.className} text-4xl md:text-6xl tracking-tight bg-gradient-to-r from-[#101010] to-[#AE7C53] inline-block text-transparent bg-clip-text text-center`}>{service.title}</h1>
               {service.manufactureDesc}
               {service.diamondDescription}
               {service.repairDesc}
@@ -272,7 +260,7 @@ const page = ({ params }) => {
             {service.highlights.map((highlight) => {
               return(
                 <div className='flex flex-col gap-5' key={highlight}>
-                  <h3 className={`${federo.className} text-xl md:text-2xl font-bold text-[#eeba81]`}>{highlight.title}</h3>
+                  <h3 className={`${federo.className} text-xl md:text-2xl font-bold text-[#6c4a27]`}>{highlight.title}</h3>
                   <p className={`${dmsans.className} md:text-md text-sm tracking-tighter`}>{highlight.description}</p>
                 </div>
               )
