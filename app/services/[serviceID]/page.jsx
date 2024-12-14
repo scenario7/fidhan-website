@@ -48,7 +48,7 @@ const federo = Federo({
     {
       id: 'jewellery-manufacturing',
       title: 'Jewellery Manufacturing',
-      image: 'https://images.unsplash.com/photo-1517348663636-31103cb49587?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+      images: ['https://images.pexels.com/photos/4354613/pexels-photo-4354613.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2', 'https://images.pexels.com/photos/7167017/pexels-photo-7167017.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2', 'https://images.pexels.com/photos/6263143/pexels-photo-6263143.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'],
       manufactureDesc : (<div className={`${dmsans.className} text-[#101010] flex flex-col gap-5 pt-10 tracking-tight px-10 md:px-28 text-center`}><p>Qstone Designs is a leading jewelry manufacturer with manufacturing facilities in both India and Dubai, specializing in the production of high-quality jewelry in gold, diamond, platinum, and silver. We offer an extensive range of jewelry from 10 to 24 karats, crafted with precision and attention to detail. Our expertise spans across diamond and gemstone setting, providing exquisite and durable designs that cater to the diverse needs of jewelry retailers, from small businesses to large enterprises.</p> <p> At Qstone Designs, we pride ourselves on offering customized solutions for each of our clients. Whether you require intricate mechanical components, unique materials, or specific finishes, our team is dedicated to tailoring the manufacturing process to your exact specifications. We create a wide variety of finishes, stone settings, and platings, ensuring every piece is crafted with precision and artistry.
  </p><p> Our commitment to innovation and quality, combined with competitive pricing, makes us a trusted partner for jewelry retailers worldwide. Whether you&apos;re looking for a classic design or a bespoke creation with a distinctive finish, Qstone Designs delivers superior craftsmanship that reflects your brand&apos;s vision.</p></div>),
       description: `Qstone Designs is a leading jewelry manufacturer with facilities in both India and Dubai, specializing in high-quality jewelry in gold, diamond, platinum, and silver. Offering 10-24 karats, we focus on precision and attention to detail. Our expertise spans diamond and gemstone settings, catering to diverse retailer needs. We provide customized solutions, ensuring your jewelry is tailored to your exact specifications.`,
@@ -94,7 +94,7 @@ const federo = Federo({
     {
       id: 'cad-rendering',
       title: 'CAD and 3D Rendering',
-      image: 'https://images.unsplash.com/photo-1501046791521-e24baf06e55b?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+      images: ['https://images.unsplash.com/photo-1501046791521-e24baf06e55b?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',],
       description: `Qstone Designs utilizes advanced CAD and 3D rendering technology to bring your jewelry designs to life. Our detailed virtual models ensure that your designs are realized precisely as envisioned before physical production begins.`,
       highlights: [
         {
@@ -145,7 +145,7 @@ const federo = Federo({
           </p>
         </div>
       ),
-      image: 'https://images.unsplash.com/photo-1547584322-003a00006db0?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+      images: ['https://images.pexels.com/photos/9544361/pexels-photo-9544361.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2', 'https://images.pexels.com/photos/13412779/pexels-photo-13412779.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2', 'https://images.pexels.com/photos/13513581/pexels-photo-13513581.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2', 'https://images.pexels.com/photos/5442447/pexels-photo-5442447.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2', 'https://images.pexels.com/photos/19895204/pexels-photo-19895204/free-photo-of-close-up-of-a-diamond.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'],
       description: `At Qstone Designs, we source top-quality mined and lab-grown diamonds, as well as gemstones from trusted suppliers worldwide. Our expertise in the Four Cs ensures each diamond and gemstone meets the highest standards.`,
       highlights: [
         {
@@ -181,7 +181,7 @@ const federo = Federo({
           </div>
         </div>
       ),
-      image: 'https://images.unsplash.com/photo-1595246007497-15e0ed4b8d96?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+      images: ['https://images.pexels.com/photos/8087747/pexels-photo-8087747.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2', 'https://images.pexels.com/photos/20013416/pexels-photo-20013416/free-photo-of-engagement-ring-with-diamond-in-green-box.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2', 'https://images.pexels.com/photos/20518707/pexels-photo-20518707/free-photo-of-silver-necklace-in-box.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2', 'https://images.pexels.com/photos/12507511/pexels-photo-12507511.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'],
       description: `Qstone Designs offers bespoke packaging solutions tailored to enhance your brand's image. From luxury boxes to eco-friendly packaging, we ensure your jewelry is beautifully presented and protected.`,
       highlights: []
     },
@@ -213,7 +213,7 @@ const federo = Federo({
         </p>
         </div>
       ),
-      image: 'https://plus.unsplash.com/premium_photo-1661645433820-24c8604e4db5?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+      images: ['https://images.pexels.com/photos/6263058/pexels-photo-6263058.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',],
       description: `Qstone Designs provides expert repair services for all types of jewelry, restoring each piece with precision and care. From resizing to redesigning, we handle your treasured pieces with the utmost craftsmanship.`,
       highlights: [
         {
@@ -255,7 +255,15 @@ const page = ({ params }) => {
               {service.repairDesc}
               {service.packagingDesc}
           </div>
-          <img src={service.image} alt="" className='h-80 object-cover w-screen py-10'/>
+          <div className="grid grid-cols-1 place-items-center md:grid-cols-4 px-10 gap-5 md:gap-10">
+            {service.images.map((image, index) => {
+              return (
+                <div key={index} className="flex justify-center items-center">
+                  <img src={image} alt="" className="h-80 object-cover w-80" />
+                </div>
+              );
+            })}
+          </div>
           <div className='py-10 grid grid-cols-1 md:grid-cols-3 text-center gap-10 px-10 md:px-28'>
             {service.highlights.map((highlight) => {
               return(

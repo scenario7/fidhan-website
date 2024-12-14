@@ -128,7 +128,7 @@ const services = [
     {
       id: 'jewellery-repair',
       title: 'Jewellery Repair',
-      image: 'https://plus.unsplash.com/premium_photo-1661645433820-24c8604e4db5?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+      image: 'https://images.pexels.com/photos/6263058/pexels-photo-6263058.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
       description: `Qstone Designs provides expert repair services for all types of jewelry, restoring each piece with precision and care. From resizing to redesigning, we handle your treasured pieces with the utmost craftsmanship.`,
       highlights: [
         {

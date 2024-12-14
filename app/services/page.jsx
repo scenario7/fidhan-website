@@ -18,7 +18,7 @@
             {
               id: 'jewellery-manufacturing',
               title: 'Jewellery Manufacturing',
-              image: 'https://images.unsplash.com/photo-1517348663636-31103cb49587?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+              images: ['https://images.pexels.com/photos/4354613/pexels-photo-4354613.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2', 'https://images.pexels.com/photos/7167017/pexels-photo-7167017.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2', 'https://images.pexels.com/photos/6263143/pexels-photo-6263143.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'],
               shortdesc : 'We specialize in the full-scale manufacturing of fine jewelry, delivering pieces that meet your brands highest standards. From prototype to production, we handle every detail with precision, using the finest materials and the latest technology. Whether youre producing small batch or large-scale orders, we ensure that your products are crafted with the utmost care and attention to detail.',
               description: `Qstone Designs is a leading jewelry manufacturer with facilities in both India and Dubai, specializing in high-quality jewelry in gold, diamond, platinum, and silver. Offering 10-24 karats, we focus on precision and attention to detail. Our expertise spans diamond and gemstone settings, catering to diverse retailer needs. We provide customized solutions, ensuring your jewelry is tailored to your exact specifications.`,
               highlights: [
@@ -64,7 +64,7 @@
               id: 'cad-rendering',
               title: 'CAD and 3D Rendering',
               shortdesc : 'Using state-of-the-art CAD (Computer-Aided Design) software and 3D rendering technologies, we bring your designs to life in precise digital formats. Our team generates photorealistic renderings and detailed CAD models that allow you to visualize your designs in the most accurate way before moving forward with production.',
-              image: 'https://images.unsplash.com/photo-1501046791521-e24baf06e55b?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+              images: ['https://images.unsplash.com/photo-1501046791521-e24baf06e55b?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',],
               description: `Qstone Designs utilizes advanced CAD and 3D rendering technology to bring your jewelry designs to life. Our detailed virtual models ensure that your designs are realized precisely as envisioned before physical production begins.`,
               highlights: [
                 {
@@ -85,7 +85,7 @@
               id: 'diamonds-and-gemstones',
               title: 'Diamonds and Gemstones',
               shortdesc : 'We are proud to offer both natural diamonds and lab-grown diamonds, providing flexible options depending on your client’s preferences. All of our diamonds and gemstones come with GIA (Gemological Institute of America) and IGI (International Gemological Institute) certifications, ensuring that each stone meets the highest standards for quality, authenticity, and ethical sourcing.',
-              image: 'https://images.unsplash.com/photo-1547584322-003a00006db0?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+              images: ['https://images.pexels.com/photos/9544361/pexels-photo-9544361.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2', 'https://images.pexels.com/photos/13412779/pexels-photo-13412779.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2', 'https://images.pexels.com/photos/13513581/pexels-photo-13513581.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2', 'https://images.pexels.com/photos/5442447/pexels-photo-5442447.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2', 'https://images.pexels.com/photos/19895204/pexels-photo-19895204/free-photo-of-close-up-of-a-diamond.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'],
               description: `At Qstone Designs, we source top-quality mined and lab-grown diamonds, as well as gemstones from trusted suppliers worldwide. Our expertise in the Four Cs ensures each diamond and gemstone meets the highest standards.`,
               highlights: [
                 {
@@ -106,7 +106,7 @@
               id: 'jewellery-packaging',
               title: 'Jewellery Packaging Solutions',
               shortdesc : 'At Q Stone Designs, we offer customized packaging through our dedicated packaging brand, designed to enhance your jewelrys presentation. Our luxury packaging combines elegance, functionality, and durability, using high-quality materials like velvet linings and eco-friendly options. We work with you to create bespoke designs that reflect your brands style, ensuring your jewelry is beautifully protected and showcased.',
-              image: 'https://images.unsplash.com/photo-1595246007497-15e0ed4b8d96?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+              images: ['https://images.pexels.com/photos/8087747/pexels-photo-8087747.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2', 'https://images.pexels.com/photos/20013416/pexels-photo-20013416/free-photo-of-engagement-ring-with-diamond-in-green-box.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2', 'https://images.pexels.com/photos/20518707/pexels-photo-20518707/free-photo-of-silver-necklace-in-box.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2', 'https://images.pexels.com/photos/12507511/pexels-photo-12507511.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'],
               description: `Qstone Designs offers bespoke packaging solutions tailored to enhance your brand's image. From luxury boxes to eco-friendly packaging, we ensure your jewelry is beautifully presented and protected.`,
               highlights: [
                 {
@@ -127,7 +127,7 @@
               id: 'jewellery-repair',
               title: 'Jewellery Repair',
               shortdesc : 'At Qstone Designs, we understand the sentimental value your jewelry holds. When it comes to jewelry repairs, you need a trusted partner who delivers reliable and expert services. Whatever your repair needs may be, we are here to help restore your precious pieces to their original beauty.',
-              image: 'https://plus.unsplash.com/premium_photo-1661645433820-24c8604e4db5?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+              images: ['https://images.pexels.com/photos/6263058/pexels-photo-6263058.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'],
               description: `Qstone Designs provides expert repair services for all types of jewelry, restoring each piece with precision and care. From resizing to redesigning, we handle your treasured pieces with the utmost craftsmanship.`,
               highlights: [
                 {
@@ -170,7 +170,7 @@
                   <div
                     className="absolute inset-0 z-0 overflow-hidden backdrop-blur-lg"
                     style={{
-                      backgroundImage: `url("${service.image}")`,
+                      backgroundImage: `url("${service.images[0]}")`,
                       backgroundSize: "cover",
                       backgroundPosition: "center", // Blur effect for the background
                     }}

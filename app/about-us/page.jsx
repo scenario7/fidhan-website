@@ -60,7 +60,7 @@ const page = () => {
             })}
         </div>
         <div className='flex flex-col gap-3 items-center py-10'>
-            <h1 className={`${federo.className} text-3xl tracking-tight text-[#C08E58] text-center`}>Why Choose Us?</h1>
+            <h1 className={`${federo.className} text-3xl tracking-tight text-[#070706] text-center`}>Why Choose Us?</h1>
             <div className='w-40 md:w-80 bg-gradient-to-r from-[#ffffff] via-[#C08E58] to-[#ffffff] h-[2px]'></div>
             <p className={`${dmsans.className} tracking-tight text-center w-3/4 pt-10`}>At Q Stone Designs, our in-house lab-grown diamond facility and extensive network for sourcing natural stones enable us to offer you competitive rates on both diamonds and gemstones, all certified by IGI and GIA. We provide on-demand designers to collaborate with you or your clients to fulfill custom needs, while our worldwide shipping ensures hassle-free delivery. We support your business growth with cost-effective methods and advanced technology.</p>
         </div>
