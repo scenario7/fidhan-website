@@ -6,7 +6,7 @@ import whiteBG from '@/images/logo-white-bg.png'
 import Image from 'next/image'
 
 const dmsans = DM_Sans({
-    weight : ["400"],
+    weight : ["400", "500", "600"],
     subsets : ["latin"]
 })
 
@@ -16,7 +16,7 @@ const NavBar = () => {
       <Link href="/">
         <Image src={whiteBG} height={90} alt='Logo' className='rounded-full'/>
       </Link>
-        <div className={`${dmsans.className} md:text-md text-sm flex gap-5 md:gap-10`}>
+        <div className={`${dmsans.className} md:text-lg text-sm tracking-tight flex gap-6 md:gap-10`}>
             <Link href="/services">Services</Link>
             <a href="/about-us">About</a>
             <a href="/contact-us">Contact</a>

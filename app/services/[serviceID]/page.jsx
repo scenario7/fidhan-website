@@ -145,7 +145,7 @@ const federo = Federo({
           </p>
         </div>
       ),
-      images: ['https://images.pexels.com/photos/9544361/pexels-photo-9544361.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2', 'https://images.pexels.com/photos/13412779/pexels-photo-13412779.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2', 'https://images.pexels.com/photos/13513581/pexels-photo-13513581.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2', 'https://images.pexels.com/photos/5442447/pexels-photo-5442447.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2', 'https://images.pexels.com/photos/19895204/pexels-photo-19895204/free-photo-of-close-up-of-a-diamond.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'],
+      images: ['https://images.pexels.com/photos/9544361/pexels-photo-9544361.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2', 'https://images.pexels.com/photos/13412779/pexels-photo-13412779.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2', 'https://images.pexels.com/photos/5442447/pexels-photo-5442447.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2', 'https://images.pexels.com/photos/19895204/pexels-photo-19895204/free-photo-of-close-up-of-a-diamond.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'],
       description: `At Qstone Designs, we source top-quality mined and lab-grown diamonds, as well as gemstones from trusted suppliers worldwide. Our expertise in the Four Cs ensures each diamond and gemstone meets the highest standards.`,
       highlights: [
         {
@@ -246,7 +246,7 @@ const page = ({ params }) => {
   return (
     <div className='flex flex-col items-center'>
           <NavBar/>
-          <div className='flex flex-col items-center gap-3 py-10 px-3 md:px-0'>
+          <div className='flex flex-col items-center gap-3 pb-10 px-3 md:px-0'>
               <h3 className={`${dmsans.className} text-[#101010] tracking-tight`}>Explore how we help with</h3>
               <div className='w-40 md:w-80 bg-gradient-to-r from-[#ffffff] via-[#AE7C53] to-[#ffffff] h-[2px]'></div>
               <h1 className={`${federo.className} text-4xl md:text-6xl tracking-tight bg-gradient-to-r from-[#101010] to-[#AE7C53] inline-block text-transparent bg-clip-text text-center`}>{service.title}</h1>
@@ -254,15 +254,6 @@ const page = ({ params }) => {
               {service.diamondDescription}
               {service.repairDesc}
               {service.packagingDesc}
-          </div>
-          <div className="grid grid-cols-1 place-items-center md:grid-cols-4 px-10 gap-5 md:gap-10">
-            {service.images.map((image, index) => {
-              return (
-                <div key={index} className="flex justify-center items-center">
-                  <img src={image} alt="" className="h-80 object-cover w-80" />
-                </div>
-              );
-            })}
           </div>
           <div className='py-10 grid grid-cols-1 md:grid-cols-3 text-center gap-10 px-10 md:px-28'>
             {service.highlights.map((highlight) => {
@@ -272,6 +263,15 @@ const page = ({ params }) => {
                   <p className={`${dmsans.className} md:text-md text-sm tracking-tighter`}>{highlight.description}</p>
                 </div>
               )
+            })}
+          </div>
+          <div className="flex md:flex-row flex-col px-10 gap-5 md:gap-10">
+            {service.images.map((image, index) => {
+              return (
+                <div key={index} className="flex justify-center items-center">
+                  <img src={image} alt="" className="h-80 object-cover w-80" />
+                </div>
+              );
             })}
           </div>
           <CustomFooter/>
