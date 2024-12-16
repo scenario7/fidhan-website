@@ -19,7 +19,7 @@ const federo = Federo({
 
 const CustomFooter = () => {
   return (
-    <div className='flex flex-col md:flex-row items-end justify-between px-10 py-10 w-screen'>
+    <div className='flex flex-col md:flex-row items-center md:items-end justify-between px-10 py-10 w-screen'>
         <div className='flex flex-col items-center md:items-start'>
         <Link href="/">
           <Image src={whiteBG} height={90} alt='Logo' className='rounded-full'/>
