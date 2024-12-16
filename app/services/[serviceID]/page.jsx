@@ -2,6 +2,7 @@ import React from 'react';
 import CustomFooter from '@/components/CustomFooter';
 import { Federo, DM_Sans } from "next/font/google";
 import NavBar from "@/components/NavBar";
+import client from '@/app/client';
 
 const packagingPoints = [
   {
@@ -232,11 +233,52 @@ const federo = Federo({
     },
   ];
   
+
+  async function getData(slug) {
+    const data = await client.fetch(
+        `*[_type == "service" && slug.current == $slug][0] {
+            _id,
+            serviceName,
+            serviceShortDesc,
+            slug,
+            images[] {
+                asset -> {
+                    _id,
+                    url
+                },
+                alt
+            },
+            highlights[] {
+                title,
+                description
+            },
+            serviceLongDesc[] {
+                _type,
+                style,
+                children[]{
+                    _key,
+                    text,
+                    marks
+                },
+                list
+            }
+        }`,
+        { slug }
+    );
+
+    if (data) {
+        return data; // Return the first item from the array (or the object in this case)
+    } else {
+        console.error('No data found for the service');
+        return null;
+    }
+}
   
 
-const page = ({ params }) => {
+const page = async ({ params }) => {
   // Find the service matching the serviceID param
-  const service = services.find((service) => service.id === params.serviceID);
+  //const service = services.find((service) => service.id === params.serviceID);
+  const service = await getData(params.serviceID)
 
   // Handle the case where no service matches the ID
   if (!service) {
@@ -249,17 +291,47 @@ const page = ({ params }) => {
           <div className='flex flex-col items-center gap-3 pb-10 px-3 md:px-0'>
               <h3 className={`${dmsans.className} text-[#101010] tracking-tight`}>Explore how we help with</h3>
               <div className='w-40 md:w-80 bg-gradient-to-r from-[#ffffff] via-[#AE7C53] to-[#ffffff] h-[2px]'></div>
-              <h1 className={`${federo.className} text-4xl md:text-6xl tracking-tight bg-gradient-to-r from-[#101010] to-[#AE7C53] inline-block text-transparent bg-clip-text text-center`}>{service.title}</h1>
-              {service.manufactureDesc}
+              <h1 className={`${federo.className} text-4xl md:text-6xl tracking-tight bg-gradient-to-r from-[#C08E58] to-[#C5B692] inline-block text-transparent bg-clip-text text-center`}>{service.serviceName}</h1>
+              {service.serviceLongDesc && service.serviceLongDesc.map((block, index) => (
+                    <div key={index}>
+                        {/* Check for block children and render them */}
+                        {block.children && block.children.map((child, childIndex) => (
+                            <p key={childIndex} className={`${dmsans.className} text-[#101010] flex flex-col gap-5 pt-10 tracking-tight px-10 md:px-28 text-center`}>
+                                {child.text}
+                            </p>
+                        ))}
+                    </div>
+                ))}
+                {params.serviceID === 'jewellery-repair' && (
+                  <p className={`${dmsans.className} text-[#101010] text-left px-10 md:px-28 w-full`}>
+                    <ul className='list-disc list-inside'>
+                      <li>Diamond Jewellery Repairs</li>
+                      <li>Gold Jewellery Soldering</li>
+                      <li>Ring Resizing</li>
+                      <li>Corporate / Bulk Jewellery Repair Services</li>
+                      <li>Jewellery Cleaning</li>
+                      <li>Jewellery Engraving</li>
+                      <li>Jewellery Polishing</li>
+                      <li>Jewellery Re-Plating</li>
+                      <li>Jewellery Redesign</li>
+                      <li>Jewellery Restringing</li>
+                      <li>Jewellery Stone Setting</li>
+                      <li>Necklace, Bracelet, and Chain Link Repair</li>
+                      <li>Pearl Drilling</li>
+                      <li>Replacement of Gemstones</li>
+                  </ul>
+                  </p>
+                )}
+              {/* {service.manufactureDesc}
               {service.diamondDescription}
               {service.repairDesc}
-              {service.packagingDesc}
+              {service.packagingDesc} */}
           </div>
           <div className='py-10 grid grid-cols-1 md:grid-cols-3 text-center gap-10 px-10 md:px-28'>
             {service.highlights.map((highlight) => {
               return(
                 <div className='flex flex-col gap-5' key={highlight}>
-                  <h3 className={`${federo.className} text-xl md:text-2xl font-bold text-[#6c4a27]`}>{highlight.title}</h3>
+                  <h3 className={`${federo.className} text-xl md:text-2xl font-bold text-[#C5B692]`}>{highlight.title}</h3>
                   <p className={`${dmsans.className} md:text-md text-sm tracking-tighter`}>{highlight.description}</p>
                 </div>
               )
@@ -269,7 +341,7 @@ const page = ({ params }) => {
             {service.images.map((image, index) => {
               return (
                 <div key={index} className="flex justify-center items-center">
-                  <img src={image} alt="" className="h-80 object-cover w-80" />
+                  <img src={image.asset?.url} alt="" className="h-80 object-cover w-80" />
                 </div>
               );
             })}

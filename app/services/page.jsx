@@ -2,6 +2,7 @@
         import { Federo, DM_Sans } from "next/font/google";
         import CustomFooter from '@/components/CustomFooter';
         import NavBar from '@/components/NavBar';
+        import client from '@/app/client'
 
         const federo = Federo({
             weight: ["400"], // Specify weights
@@ -146,75 +147,115 @@
             },
           ];
 
-        const page = () => {
-        return (
-            <div className='flex flex-col items-center'>
-                <NavBar/>
-                <div className='flex flex-col items-center gap-3  px-10 md:px-0'>
-                    <h3 className={`${dmsans.className} text-[#101010] tracking-tight`}>Because Your Style Deserves Uniqueness</h3>
-                    <div className='w-40 md:w-80 bg-gradient-to-r from-[#ffffff] via-[#AE7C53] to-[#ffffff] h-[2px]'></div>
-                    <h1 className={`${federo.className} text-5xl md:text-6xl tracking-tight bg-gradient-to-r from-[#C08E58] to-[#AE7C53] inline-block text-transparent bg-clip-text`}>Our Services</h1>
-                    <p className={`${dmsans.className} text-black md:text-md tracking-tight md:px-28 text-center`}>Crafted with precision and passion, our jewelry is designed to reflect your individuality, offering timeless elegance that complements your unique style and grace.</p>
-                </div>
-                <div className="flex gap-10 flex-col py-10 px-5">
-            {services.map((service, index) => {
-                const isEven = index % 2 === 0; // Determine alignment
-                return (
-                  <div
-                  key={service.title} // Unique key for each card
-                  className={`relative flex flex-col py-16 tracking-tighter ${
-                    isEven ? "items-start" : "items-end"
-                  }`}
-                >
-                  {/* Background with image, blur, and color overlay */}
-                  <div
-                    className="absolute inset-0 z-0 overflow-hidden backdrop-blur-lg"
-                    style={{
-                      backgroundImage: `url("${service.images[0]}")`,
-                      backgroundSize: "cover",
-                      backgroundPosition: "center", // Blur effect for the background
-                    }}
-                  >
-                    {/* Color overlay */}
-                    <div
-                      className={`absolute inset-0 ${
-                        isEven
-                          ? "bg-gradient-to-l from-[#C5B692] to-[#101010]"
-                          : "bg-gradient-to-r from-[#C5B692] to-[#101010]"
-                      } opacity-70 backdrop-blur-xl`}
-                    ></div>
-                  </div>
-                
-                  {/* Foreground content */}
-                  <div
-                    className={`relative z-10 p-8 bg-transparent ${
-                      isEven ? "md:w-1/2 text-left" : "md:w-1/2 ml-auto text-right"
-                    } flex flex-col gap-5`}
-                  >
-                    <h2
-                      className={`${dmsans.className} text-2xl md:text-3xl font-medium text-white`}
-                    >
-                      {service.title}
-                    </h2>
-                    <p className={`${dmsans.className} md:text-md text-sm text-white`}>
-                      {service.shortdesc}
-                    </p>
-                    <a
-                      className={`${dmsans.className} px-3 py-1 rounded-lg hover:bg-white hover:text-black text-white transition-colors`}
-                      href={`/services/${service.id}`}
-                    >
-                      Explore Offerings →
-                    </a>
-                  </div>
-                </div>
-                
-                );
-            })}
-        </div>
 
-                <CustomFooter/>
-            </div>
-        )
+          async function getServices() {
+            const services = await client.fetch(
+                `*[_type == "service"]{
+                    _id,
+                    serviceName,
+                    serviceShortDesc,
+                    slug,
+                    images[]{
+                        asset->{
+                            _id,
+                            url
+                        }
+                    },
+                    highlights[]{
+                        title,
+                        description
+                    },
+                    serviceLongDesc,
+                } | order(serviceName asc)`
+            );
+        
+            if (services) {
+                return services; // Return the array of services
+            } else {
+                console.error('No services found');
+                return null;
+            }
         }
+        
 
-        export default page
+        const page = async () => {
+          const services = await getServices(); // Fetch services data
+          if (!services) {
+              return (
+                  <div className='flex flex-col items-center'>
+                      <NavBar />
+                      <div className='flex flex-col items-center gap-3 px-10 md:px-0'>
+                          <h1 className='text-2xl text-red-500'>No Services Found</h1>
+                      </div>
+                      <CustomFooter />
+                  </div>
+              );
+          }
+      
+          return (
+              <div className='flex flex-col items-center'>
+                  <NavBar />
+                  <div className='flex flex-col items-center gap-3 px-10 md:px-0'>
+                      <h3 className={`${dmsans.className} text-[#101010] tracking-tight`}>Because Your Style Deserves Uniqueness</h3>
+                      <div className='w-40 md:w-80 bg-gradient-to-r from-[#ffffff] via-[#AE7C53] to-[#ffffff] h-[2px]'></div>
+                      <h1 className={`${federo.className} text-5xl md:text-6xl tracking-tight bg-gradient-to-r from-[#C08E58] to-[#AE7C53] inline-block text-transparent bg-clip-text`}>Our Services</h1>
+                      <p className={`${dmsans.className} text-black md:text-md tracking-tight md:px-28 text-center`}>Crafted with precision and passion, our jewelry is designed to reflect your individuality, offering timeless elegance that complements your unique style and grace.</p>
+                  </div>
+                  <div className="flex gap-10 flex-col py-10 px-5">
+                      {services.map((service, index) => {
+                          const isEven = index % 2 === 0; // Determine alignment
+                          return (
+                              <div
+                                  key={service._id} // Unique key for each card
+                                  className={`relative flex flex-col py-16 tracking-tighter ${isEven ? "items-start" : "items-end"}`}
+                              >
+                                  {/* Background with image, blur, and color overlay */}
+                                  <div
+                                      className="absolute inset-0 z-0 overflow-hidden backdrop-blur-lg"
+                                      style={{
+                                          backgroundImage: `url('${service.images[0]?.asset?.url}')`,
+                                          backgroundSize: "cover",
+                                          backgroundPosition: "center", // Blur effect for the background
+                                      }}
+                                  >
+                                      {/* Color overlay */}
+                                      <div
+                                          className={`absolute inset-0 ${
+                                              isEven
+                                                  ? "bg-gradient-to-l from-[#C5B692] to-[#101010]"
+                                                  : "bg-gradient-to-r from-[#C5B692] to-[#101010]"
+                                          } opacity-70 backdrop-blur-xl`}
+                                      ></div>
+                                  </div>
+      
+                                  {/* Foreground content */}
+                                  <div
+                                      className={`relative z-10 p-8 bg-transparent ${
+                                          isEven ? "md:w-1/2 text-left" : "md:w-1/2 ml-auto text-right"
+                                      } flex flex-col gap-5`}
+                                  >
+                                      <h2 className={`${dmsans.className} text-2xl md:text-3xl font-medium text-white`}>
+                                          {service.serviceName}
+                                      </h2>
+                                      <p className={`${dmsans.className} md:text-md text-sm text-white`}>
+                                          {service.serviceShortDesc}
+                                      </p>
+                                      <a
+                                          className={`${dmsans.className} px-3 py-1 rounded-lg hover:bg-white hover:text-black text-white transition-colors`}
+                                          href={`/services/${service.slug?.current}`}
+                                      >
+                                          Explore Offerings →
+                                      </a>
+                                  </div>
+                              </div>
+                          );
+                      })}
+                  </div>
+      
+                  <CustomFooter />
+              </div>
+          );
+      };
+      
+      export default page;
+      
