@@ -240,6 +240,7 @@ const federo = Federo({
             _id,
             serviceName,
             serviceShortDesc,
+            serviceVideo,
             slug,
             images[] {
                 asset -> {
@@ -337,6 +338,19 @@ const page = async ({ params }) => {
               )
             })}
           </div>
+          {service.serviceVideo && (
+              <iframe
+                width="560"
+                height="315"
+                src={service.serviceVideo}
+                title="YouTube video player"
+                frameBorder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerPolicy="strict-origin-when-cross-origin"
+                allowFullScreen
+              ></iframe>
+            )}
+
           <div className="flex md:flex-row flex-col px-10 gap-5 md:gap-10">
             {service.images.map((image, index) => {
               return (
