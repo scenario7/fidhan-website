@@ -17,7 +17,7 @@ const federo = Federo({
 export const NeedsCard = ({ props }) => {
   return (
     <div className="flex flex-col items-center justify-start p-4 rounded-md text-center ">
-      <div className="w-16 h-16 mb-4 bg-[#c08e58] rounded-full p-3 items-center">{props.svg}</div>
+      <div className="w-16 h-16 mb-4 bg-[#C5B692] rounded-full p-3 items-center">{props.svg}</div>
       <h2 className={`text-md font-semibold mb-2 ${dmsans.className} text-black tracking-tight`}>{props.title}</h2>
       <p className={`text-sm text-[#494949] font-medium tracking-tighter text-center ${dmsans.className}`}>{props.subtitle}</p>
     </div>

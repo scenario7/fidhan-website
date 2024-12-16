@@ -13,22 +13,22 @@ const federo = Federo({
   });
 
   const dmsans = DM_Sans({
-    weight: ["400"], // Specify weights
+    weight: ["400", "500", "600"], // Specify weights
     subsets: ["latin"],    // Choose subsets
   });
 
 const CustomFooter = () => {
   return (
-    <div className='flex flex-col md:flex-row items-center justify-between px-10 py-10 w-screen'>
-        <div className='flex flex-col items-center md:items-start gap-10'>
+    <div className='flex flex-col md:flex-row items-end justify-between px-10 py-10 w-screen'>
+        <div className='flex flex-col items-center md:items-start'>
         <Link href="/">
           <Image src={whiteBG} height={90} alt='Logo' className='rounded-full'/>
         </Link>
         <p className={`text-[#808080] text-center md:text-left ${dmsans.className}`}>
-        Shop No. 23,<br/>Crystal Plaza Building,<br/>Linking Road, Bandra West,<br/>Mumbai, Maharashtra 400050, India
+        <a href="">info@qstonedesigns.com</a>
         </p>
         </div>
-        <div className={`flex flex-col items-end text-right ${dmsans.className} hidden sm:flex`}>
+        <div className={`flex flex-col items-end text-right ${dmsans.className} hidden sm:flex text-[#808080] font-medium tracking-tight`}>
           <Link href="/">Home</Link>
           <a href='/about-us'>About Us</a>
           <Link href='/services'>Services</Link>

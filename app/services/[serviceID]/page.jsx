@@ -92,26 +92,6 @@ const federo = Federo({
       ]
     },
     {
-      id: 'cad-rendering',
-      title: 'CAD and 3D Rendering',
-      images: ['https://images.unsplash.com/photo-1501046791521-e24baf06e55b?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',],
-      description: `Qstone Designs utilizes advanced CAD and 3D rendering technology to bring your jewelry designs to life. Our detailed virtual models ensure that your designs are realized precisely as envisioned before physical production begins.`,
-      highlights: [
-        {
-          title: 'Jewelry 3D Modelling',
-          description: 'At Qstone Designs, we combine the artistry of traditional craftsmanship with the power of cutting-edge technology to offer exceptional Jewelry 3D Modeling services. Our advanced techniques allow us to create detailed virtual models of your jewelry designs, bringing your creative ideas to life before physical production begins. This seamless integration of innovation and precision ensures that your designs are realized exactly as envisioned, while staying true to our commitment to superior craftsmanship.'
-        },
-        {
-          title: 'Jewelry CAM',
-          description: 'After finalizing the CAD design, it is transferred to our 3D Rapid Prototype system, which utilizes Direct Light Projection Technology. This system meticulously builds the resin model using a fully functional 3D Rapid Prototyping System (RPT), ensuring the highest level of accuracy and detail.'
-        },
-        {
-          title: 'Jewelry Rendering',
-          description: 'Our 3D rendering service allows clients to view their jewelry designs from multiple angles. These high-quality images and videos provide a realistic and comprehensive visual representation, meeting your specific requirements and preferences. Rendered visuals are versatile, making them perfect for marketing materials such as websites, social media, or print ads. Stunning, lifelike renderings help attract potential customers and showcase your designs in the best possible light. Additionally, 3D rendering offers a cost-effective alternative to physical prototyping. Rather than creating a physical piece for each design, which can be expensive and time-consuming, 3D rendering allows you to visualize and refine your design digitally. This approach saves both time and costs, while ensuring that your final product is perfect before moving into production.'
-        },
-      ]
-    },
-    {
       id: 'diamonds-and-gemstones',
       title: 'Diamonds and Gemstones',
       diamondDescription : (
@@ -163,27 +143,24 @@ const federo = Federo({
       ]
     },
     {
-      id: 'jewellery-packaging',
-      title: 'Jewellery Packaging Solutions',
-      packagingDesc : (
-        <div className={`${dmsans.className} text-[#101010] flex flex-col gap-5 pt-10 tracking-tight px-10 md:px-28 text-center`}>
-          <p>At QStone, we are dedicated to offering the best possible service and ensuring that your brand&apos;s packaging needs are met with precision and care. We are confident in our ability to provide the perfect packaging solution tailored to your products and brand.</p>
-          <p>Here are a few ways QStone can assist you with your packaging needs:</p>
-          <div>
-            {packagingPoints.map((point) => {
-              return(
-                <div className='md:text-left py-5' key={point.title}>
-                <h3 className={`${federo.className} text-2xl pb-2 text-[#eeba81]`}>{point.title}</h3>
-                <p>{point.description}</p>
-                </div>
-              )
-            })}
-          </div>
-        </div>
-      ),
-      images: ['https://images.pexels.com/photos/8087747/pexels-photo-8087747.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2', 'https://images.pexels.com/photos/20013416/pexels-photo-20013416/free-photo-of-engagement-ring-with-diamond-in-green-box.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2', 'https://images.pexels.com/photos/20518707/pexels-photo-20518707/free-photo-of-silver-necklace-in-box.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2', 'https://images.pexels.com/photos/12507511/pexels-photo-12507511.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'],
-      description: `Qstone Designs offers bespoke packaging solutions tailored to enhance your brand's image. From luxury boxes to eco-friendly packaging, we ensure your jewelry is beautifully presented and protected.`,
-      highlights: []
+      id: 'cad-rendering',
+      title: 'CAD and 3D Rendering',
+      images: ['https://images.unsplash.com/photo-1501046791521-e24baf06e55b?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',],
+      description: `Qstone Designs utilizes advanced CAD and 3D rendering technology to bring your jewelry designs to life. Our detailed virtual models ensure that your designs are realized precisely as envisioned before physical production begins.`,
+      highlights: [
+        {
+          title: 'Jewelry 3D Modelling',
+          description: 'At Qstone Designs, we combine the artistry of traditional craftsmanship with the power of cutting-edge technology to offer exceptional Jewelry 3D Modeling services. Our advanced techniques allow us to create detailed virtual models of your jewelry designs, bringing your creative ideas to life before physical production begins. This seamless integration of innovation and precision ensures that your designs are realized exactly as envisioned, while staying true to our commitment to superior craftsmanship.'
+        },
+        {
+          title: 'Jewelry CAM',
+          description: 'After finalizing the CAD design, it is transferred to our 3D Rapid Prototype system, which utilizes Direct Light Projection Technology. This system meticulously builds the resin model using a fully functional 3D Rapid Prototyping System (RPT), ensuring the highest level of accuracy and detail.'
+        },
+        {
+          title: 'Jewelry Rendering',
+          description: 'Our 3D rendering service allows clients to view their jewelry designs from multiple angles. These high-quality images and videos provide a realistic and comprehensive visual representation, meeting your specific requirements and preferences. Rendered visuals are versatile, making them perfect for marketing materials such as websites, social media, or print ads. Stunning, lifelike renderings help attract potential customers and showcase your designs in the best possible light. Additionally, 3D rendering offers a cost-effective alternative to physical prototyping. Rather than creating a physical piece for each design, which can be expensive and time-consuming, 3D rendering allows you to visualize and refine your design digitally. This approach saves both time and costs, while ensuring that your final product is perfect before moving into production.'
+        },
+      ]
     },
     {
       id: 'jewellery-repair',
@@ -229,7 +206,30 @@ const federo = Federo({
           description: 'Stone replacement, jewelry redesign, and re-plating to refresh heirloom pieces.'
         }
       ]
-    }
+    },
+    {
+      id: 'jewellery-packaging',
+      title: 'Jewellery Packaging Solutions',
+      packagingDesc : (
+        <div className={`${dmsans.className} text-[#101010] flex flex-col gap-5 pt-10 tracking-tight px-10 md:px-28 text-center`}>
+          <p>At QStone, we are dedicated to offering the best possible service and ensuring that your brand&apos;s packaging needs are met with precision and care. We are confident in our ability to provide the perfect packaging solution tailored to your products and brand.</p>
+          <p>Here are a few ways QStone can assist you with your packaging needs:</p>
+          <div>
+            {packagingPoints.map((point) => {
+              return(
+                <div className='md:text-left py-5' key={point.title}>
+                <h3 className={`${federo.className} text-2xl pb-2 text-[#eeba81]`}>{point.title}</h3>
+                <p>{point.description}</p>
+                </div>
+              )
+            })}
+          </div>
+        </div>
+      ),
+      images: ['https://images.pexels.com/photos/8087747/pexels-photo-8087747.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2', 'https://images.pexels.com/photos/20013416/pexels-photo-20013416/free-photo-of-engagement-ring-with-diamond-in-green-box.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2', 'https://images.pexels.com/photos/20518707/pexels-photo-20518707/free-photo-of-silver-necklace-in-box.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2', 'https://images.pexels.com/photos/12507511/pexels-photo-12507511.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'],
+      description: `Qstone Designs offers bespoke packaging solutions tailored to enhance your brand's image. From luxury boxes to eco-friendly packaging, we ensure your jewelry is beautifully presented and protected.`,
+      highlights: []
+    },
   ];
   
   

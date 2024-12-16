@@ -22,8 +22,8 @@ const CollectionCard = ({params}) => {
       style={{
         backgroundImage: `linear-gradient(
           to bottom,
-          ${hovered ? "#C08E58CC" : "#10101070"},
-          ${hovered ? "#C08E58CC" : "#10101070"}
+          ${hovered ? "#C5B692CC" : "#10101070"},
+          ${hovered ? "#C5B692CC" : "#10101070"}
         ), url(${params.imgURL})`,
         backgroundSize: "cover",
         backgroundPosition: "center",

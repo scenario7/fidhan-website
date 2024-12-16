@@ -61,6 +61,27 @@
               ]
             },
             {
+              id: 'diamonds-and-gemstones',
+              title: 'Diamonds and Gemstones',
+              shortdesc : 'We are proud to offer both natural diamonds and lab-grown diamonds, providing flexible options depending on your client’s preferences. All of our diamonds and gemstones come with GIA (Gemological Institute of America) and IGI (International Gemological Institute) certifications, ensuring that each stone meets the highest standards for quality, authenticity, and ethical sourcing.',
+              images: ['https://images.pexels.com/photos/9544361/pexels-photo-9544361.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2', 'https://images.pexels.com/photos/13412779/pexels-photo-13412779.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2', 'https://images.pexels.com/photos/13513581/pexels-photo-13513581.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2', 'https://images.pexels.com/photos/5442447/pexels-photo-5442447.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2', 'https://images.pexels.com/photos/19895204/pexels-photo-19895204/free-photo-of-close-up-of-a-diamond.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'],
+              description: `At Qstone Designs, we source top-quality mined and lab-grown diamonds, as well as gemstones from trusted suppliers worldwide. Our expertise in the Four Cs ensures each diamond and gemstone meets the highest standards.`,
+              highlights: [
+                {
+                  title: 'Lab-Grown Diamond Manufacturing',
+                  description: 'Facility in India ensures precision and quality for every lab-grown diamond.'
+                },
+                {
+                  title: 'Diverse Diamond Options',
+                  description: 'Wide variety of diamond shapes, sizes, and clarity ranging from flawless to I1-2.'
+                },
+                {
+                  title: 'Ethical and Certified Diamonds',
+                  description: 'Eco-friendly and ethically sourced diamonds with GIA and IGI certifications.'
+                }
+              ]
+            },
+            {
               id: 'cad-rendering',
               title: 'CAD and 3D Rendering',
               shortdesc : 'Using state-of-the-art CAD (Computer-Aided Design) software and 3D rendering technologies, we bring your designs to life in precise digital formats. Our team generates photorealistic renderings and detailed CAD models that allow you to visualize your designs in the most accurate way before moving forward with production.',
@@ -82,23 +103,23 @@
               ]
             },
             {
-              id: 'diamonds-and-gemstones',
-              title: 'Diamonds and Gemstones',
-              shortdesc : 'We are proud to offer both natural diamonds and lab-grown diamonds, providing flexible options depending on your client’s preferences. All of our diamonds and gemstones come with GIA (Gemological Institute of America) and IGI (International Gemological Institute) certifications, ensuring that each stone meets the highest standards for quality, authenticity, and ethical sourcing.',
-              images: ['https://images.pexels.com/photos/9544361/pexels-photo-9544361.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2', 'https://images.pexels.com/photos/13412779/pexels-photo-13412779.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2', 'https://images.pexels.com/photos/13513581/pexels-photo-13513581.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2', 'https://images.pexels.com/photos/5442447/pexels-photo-5442447.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2', 'https://images.pexels.com/photos/19895204/pexels-photo-19895204/free-photo-of-close-up-of-a-diamond.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'],
-              description: `At Qstone Designs, we source top-quality mined and lab-grown diamonds, as well as gemstones from trusted suppliers worldwide. Our expertise in the Four Cs ensures each diamond and gemstone meets the highest standards.`,
+              id: 'jewellery-repair',
+              title: 'Jewellery Repair',
+              shortdesc : 'At Qstone Designs, we understand the sentimental value your jewelry holds. When it comes to jewelry repairs, you need a trusted partner who delivers reliable and expert services. Whatever your repair needs may be, we are here to help restore your precious pieces to their original beauty.',
+              images: ['https://images.pexels.com/photos/6263058/pexels-photo-6263058.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'],
+              description: `Qstone Designs provides expert repair services for all types of jewelry, restoring each piece with precision and care. From resizing to redesigning, we handle your treasured pieces with the utmost craftsmanship.`,
               highlights: [
                 {
-                  title: 'Lab-Grown Diamond Manufacturing',
-                  description: 'Facility in India ensures precision and quality for every lab-grown diamond.'
+                  title: 'Comprehensive Repair Services',
+                  description: 'Diamond jewelry repairs, gold soldering, and resizing services.'
                 },
                 {
-                  title: 'Diverse Diamond Options',
-                  description: 'Wide variety of diamond shapes, sizes, and clarity ranging from flawless to I1-2.'
+                  title: 'Corporate and Bulk Repairs',
+                  description: 'Dedicated services for businesses and bulk repair requirements.'
                 },
                 {
-                  title: 'Ethical and Certified Diamonds',
-                  description: 'Eco-friendly and ethically sourced diamonds with GIA and IGI certifications.'
+                  title: 'Restoration and Redesign',
+                  description: 'Stone replacement, jewelry redesign, and re-plating to refresh heirloom pieces.'
                 }
               ]
             },
@@ -123,27 +144,6 @@
                 }
               ]
             },
-            {
-              id: 'jewellery-repair',
-              title: 'Jewellery Repair',
-              shortdesc : 'At Qstone Designs, we understand the sentimental value your jewelry holds. When it comes to jewelry repairs, you need a trusted partner who delivers reliable and expert services. Whatever your repair needs may be, we are here to help restore your precious pieces to their original beauty.',
-              images: ['https://images.pexels.com/photos/6263058/pexels-photo-6263058.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'],
-              description: `Qstone Designs provides expert repair services for all types of jewelry, restoring each piece with precision and care. From resizing to redesigning, we handle your treasured pieces with the utmost craftsmanship.`,
-              highlights: [
-                {
-                  title: 'Comprehensive Repair Services',
-                  description: 'Diamond jewelry repairs, gold soldering, and resizing services.'
-                },
-                {
-                  title: 'Corporate and Bulk Repairs',
-                  description: 'Dedicated services for businesses and bulk repair requirements.'
-                },
-                {
-                  title: 'Restoration and Redesign',
-                  description: 'Stone replacement, jewelry redesign, and re-plating to refresh heirloom pieces.'
-                }
-              ]
-            }
           ];
 
         const page = () => {
@@ -153,7 +153,7 @@
                 <div className='flex flex-col items-center gap-3  px-10 md:px-0'>
                     <h3 className={`${dmsans.className} text-[#101010] tracking-tight`}>Because Your Style Deserves Uniqueness</h3>
                     <div className='w-40 md:w-80 bg-gradient-to-r from-[#ffffff] via-[#AE7C53] to-[#ffffff] h-[2px]'></div>
-                    <h1 className={`${federo.className} text-5xl md:text-6xl tracking-tight bg-gradient-to-r from-[#101010] to-[#AE7C53] inline-block text-transparent bg-clip-text`}>Our Services</h1>
+                    <h1 className={`${federo.className} text-5xl md:text-6xl tracking-tight bg-gradient-to-r from-[#C08E58] to-[#AE7C53] inline-block text-transparent bg-clip-text`}>Our Services</h1>
                     <p className={`${dmsans.className} text-black md:text-md tracking-tight md:px-28 text-center`}>Crafted with precision and passion, our jewelry is designed to reflect your individuality, offering timeless elegance that complements your unique style and grace.</p>
                 </div>
                 <div className="flex gap-10 flex-col py-10 px-5">
@@ -179,8 +179,8 @@
                     <div
                       className={`absolute inset-0 ${
                         isEven
-                          ? "bg-gradient-to-l from-[#C08E58] to-[#101010]"
-                          : "bg-gradient-to-r from-[#C08E58] to-[#101010]"
+                          ? "bg-gradient-to-l from-[#C5B692] to-[#101010]"
+                          : "bg-gradient-to-r from-[#C5B692] to-[#101010]"
                       } opacity-70 backdrop-blur-xl`}
                     ></div>
                   </div>

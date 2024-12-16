@@ -66,6 +66,26 @@ const services = [
       ]
     },
     {
+      id: 'diamonds-and-gemstones',
+      title: 'Diamonds and Gemstones',
+      image: 'https://images.unsplash.com/photo-1547584322-003a00006db0?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+      description: `At Qstone Designs, we source top-quality mined and lab-grown diamonds, as well as gemstones from trusted suppliers worldwide. Our expertise in the Four Cs ensures each diamond and gemstone meets the highest standards.`,
+      highlights: [
+        {
+          title: 'Lab-Grown Diamond Manufacturing',
+          description: 'Facility in India ensures precision and quality for every lab-grown diamond.'
+        },
+        {
+          title: 'Diverse Diamond Options',
+          description: 'Wide variety of diamond shapes, sizes, and clarity ranging from flawless to I1-2.'
+        },
+        {
+          title: 'Ethical and Certified Diamonds',
+          description: 'Eco-friendly and ethically sourced diamonds with GIA and IGI certifications.'
+        }
+      ]
+    },
+    {
       id: 'cad-rendering',
       title: 'CAD and 3D Rendering',
       image: 'https://images.unsplash.com/photo-1501046791521-e24baf06e55b?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
@@ -86,22 +106,22 @@ const services = [
       ]
     },
     {
-      id: 'diamonds-and-gemstones',
-      title: 'Diamonds and Gemstones',
-      image: 'https://images.unsplash.com/photo-1547584322-003a00006db0?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
-      description: `At Qstone Designs, we source top-quality mined and lab-grown diamonds, as well as gemstones from trusted suppliers worldwide. Our expertise in the Four Cs ensures each diamond and gemstone meets the highest standards.`,
+      id: 'jewellery-repair',
+      title: 'Jewellery Repair',
+      image: 'https://images.pexels.com/photos/6263058/pexels-photo-6263058.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
+      description: `Qstone Designs provides expert repair services for all types of jewelry, restoring each piece with precision and care. From resizing to redesigning, we handle your treasured pieces with the utmost craftsmanship.`,
       highlights: [
         {
-          title: 'Lab-Grown Diamond Manufacturing',
-          description: 'Facility in India ensures precision and quality for every lab-grown diamond.'
+          title: 'Comprehensive Repair Services',
+          description: 'Diamond jewelry repairs, gold soldering, and resizing services.'
         },
         {
-          title: 'Diverse Diamond Options',
-          description: 'Wide variety of diamond shapes, sizes, and clarity ranging from flawless to I1-2.'
+          title: 'Corporate and Bulk Repairs',
+          description: 'Dedicated services for businesses and bulk repair requirements.'
         },
         {
-          title: 'Ethical and Certified Diamonds',
-          description: 'Eco-friendly and ethically sourced diamonds with GIA and IGI certifications.'
+          title: 'Restoration and Redesign',
+          description: 'Stone replacement, jewelry redesign, and re-plating to refresh heirloom pieces.'
         }
       ]
     },
@@ -125,33 +145,13 @@ const services = [
         }
       ]
     },
-    {
-      id: 'jewellery-repair',
-      title: 'Jewellery Repair',
-      image: 'https://images.pexels.com/photos/6263058/pexels-photo-6263058.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
-      description: `Qstone Designs provides expert repair services for all types of jewelry, restoring each piece with precision and care. From resizing to redesigning, we handle your treasured pieces with the utmost craftsmanship.`,
-      highlights: [
-        {
-          title: 'Comprehensive Repair Services',
-          description: 'Diamond jewelry repairs, gold soldering, and resizing services.'
-        },
-        {
-          title: 'Corporate and Bulk Repairs',
-          description: 'Dedicated services for businesses and bulk repair requirements.'
-        },
-        {
-          title: 'Restoration and Redesign',
-          description: 'Stone replacement, jewelry redesign, and re-plating to refresh heirloom pieces.'
-        }
-      ]
-    }
   ];
 
 const ServicesSummary = () => {
     return (
         <div className="flex flex-col gap-10 px-10 md:px-28">
             <div className="text-center">
-                <h1 className={`${federo.className} text-[#C08E58] text-3xl`}>
+                <h1 className={`${federo.className} text-[#C5B692] text-3xl`}>
                     Explore our Services and Offerings
                 </h1>
             </div>

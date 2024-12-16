@@ -18,7 +18,7 @@ const ServiceCard = ({ title, bgImageURL, id }) => {
         <div
             className="relative flex justify-between items-center px-3 py-7 w-full text-white"
             style={{
-                backgroundImage: `linear-gradient(to right, #10101080, #c08e5880), url(${bgImageURL})`,
+                backgroundImage: `linear-gradient(to right, #10101080, #C5B69280), url(${bgImageURL})`,
                 backgroundSize: "cover",
                 backgroundPosition: "center",
             }}
