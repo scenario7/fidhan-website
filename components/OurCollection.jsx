@@ -73,7 +73,7 @@ const OurCollection = () => {
         <div className='grid grid-cols-2 md:grid-cols-4 md:gap-10 gap-5 px-5 w-full'>
           {collection.map((col) => {
             return(
-              <CollectionCard params={col} key={col}/>
+              <CollectionCard params={col} key={col._id}/>
             )
           })}
         </div>

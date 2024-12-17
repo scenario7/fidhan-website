@@ -3,6 +3,11 @@ import CustomFooter from '@/components/CustomFooter';
 import { Federo, DM_Sans } from "next/font/google";
 import NavBar from "@/components/NavBar";
 import client from '@/app/client';
+import { EmblaCarousel } from '@/components/EmblaCarousel';
+
+const OPTIONS = {}
+const SLIDE_COUNT = 5
+const SLIDES = Array.from(Array(SLIDE_COUNT).keys())
 
 const packagingPoints = [
   {
@@ -357,15 +362,7 @@ const page = async ({ params }) => {
               )
             })}
           </div>
-          <div className="flex md:flex-row flex-col px-10 gap-5 md:gap-10">
-            {service.images.map((image, index) => {
-              return (
-                <div key={index} className="flex justify-center items-center">
-                  <img src={image.asset?.url} alt="" className="h-80 object-cover w-80" />
-                </div>
-              );
-            })}
-          </div>
+          <EmblaCarousel images={service.images}/>
           <CustomFooter/>
       </div>
   );
