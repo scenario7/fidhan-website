@@ -240,7 +240,7 @@ const federo = Federo({
           _id,
           serviceName,
           serviceShortDesc,
-          serviceVideoLink,
+          serviceVideoLink[],
           slug,
           order, // Include the 'order' field
           images[] {
@@ -340,18 +340,25 @@ const page = async ({ params }) => {
               )
             })}
           </div>
-          {service.serviceVideoLink && (
-              <iframe
-                width="560"
-                height="315"
-                src={`${service.serviceVideoLink}&autoplay=1`}
-                title="YouTube video player"
-                frameBorder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                referrerPolicy="strict-origin-when-cross-origin"
-                allowFullScreen
-              ></iframe>
-            )}
+          {service.serviceVideoLink.length > 0 && (
+            <div className="flex md:flex-row flex-col flex-wrap justify-center gap-4">
+              {service.serviceVideoLink.map((videoLink, index) => (
+                <div key={index} className="w-full md:w-[500px] md:h-[400px] sm:w-[300px] sm:h-[300px]">
+                  <iframe
+                    className="w-full h-full"
+                    src={`${videoLink}&autoplay=1&mute=1`}
+                    title={`YouTube video player ${index + 1}`}
+                    frameBorder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; muted"
+                    referrerPolicy="strict-origin-when-cross-origin"
+                    allowFullScreen
+                  ></iframe>
+                </div>
+              ))}
+            </div>
+          )}
+
+
 
           <div className="flex md:flex-row flex-col px-10 gap-5 md:gap-10">
             {service.images.map((image, index) => {

@@ -154,6 +154,7 @@
                     _id,
                     serviceName,
                     serviceShortDesc,
+                    order,
                     slug,
                     images[]{
                         asset->{
@@ -166,7 +167,7 @@
                         description
                     },
                     serviceLongDesc,
-                } | order(serviceName asc)`
+                } | order(order asc)`
             );
         
             if (services) {
