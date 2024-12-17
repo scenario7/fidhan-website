@@ -148,12 +148,13 @@ const dmsans = DM_Sans({
 //     },
 //   ];
 
-  async function getServices() {
+async function getServices() {
     const services = await client.fetch(
         `*[_type == "service"]{
             _id,
             serviceName,
             serviceShortDesc,
+            order,
             slug,
             images[]{
                 asset->{
@@ -166,7 +167,7 @@ const dmsans = DM_Sans({
                 description
             },
             serviceLongDesc,
-        } | order(serviceName asc)`
+        } | order(order asc)`
     );
 
     if (services) {
@@ -193,7 +194,7 @@ const ServicesSummary = async () => {
                             key={index} 
                             title={service.serviceName} 
                             bgImageURL={service.images[0]?.asset?.url}
-                            id={service.id}
+                            id={service.slug.current}
                         />
                     );
                 })}
