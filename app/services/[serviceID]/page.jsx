@@ -340,10 +340,10 @@ const page = async ({ params }) => {
               )
             })}
           </div>
-          {service.serviceVideoLink.length > 0 && (
+          {service.serviceVideoLink?.length > 0 && (
             <div className="flex md:flex-row flex-col flex-wrap justify-center gap-4">
               {service.serviceVideoLink.map((videoLink, index) => (
-                <div key={index} className="w-full md:w-[500px] md:h-[400px] sm:w-[300px] sm:h-[300px]">
+                <div key={index} className="md:w-[500px] md:h-[400px] w-[300px] :h-[500px]">
                   <iframe
                     className="w-full h-full"
                     src={`${videoLink}&autoplay=1&mute=1`}
