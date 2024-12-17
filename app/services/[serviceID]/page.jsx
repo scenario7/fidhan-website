@@ -236,44 +236,46 @@ const federo = Federo({
 
   async function getData(slug) {
     const data = await client.fetch(
-        `*[_type == "service" && slug.current == $slug][0] {
-            _id,
-            serviceName,
-            serviceShortDesc,
-            serviceVideo,
-            slug,
-            images[] {
-                asset -> {
-                    _id,
-                    url
-                },
-                alt
-            },
-            highlights[] {
-                title,
-                description
-            },
-            serviceLongDesc[] {
-                _type,
-                style,
-                children[]{
-                    _key,
-                    text,
-                    marks
-                },
-                list
-            }
-        }`,
-        { slug }
+      `*[_type == "service" && slug.current == $slug] | order(order asc)[0] {
+          _id,
+          serviceName,
+          serviceShortDesc,
+          serviceVideoLink,
+          slug,
+          order, // Include the 'order' field
+          images[] {
+              asset -> {
+                  _id,
+                  url
+              },
+              alt
+          },
+          highlights[] {
+              title,
+              description
+          },
+          serviceLongDesc[] {
+              _type,
+              style,
+              children[]{
+                  _key,
+                  text,
+                  marks
+              },
+              list
+          }
+      }`,
+      { slug }
     );
-
+  
     if (data) {
-        return data; // Return the first item from the array (or the object in this case)
+      return data; // Return the first item from the array (or the object in this case)
     } else {
-        console.error('No data found for the service');
-        return null;
+      console.error("No data found for the service");
+      return null;
     }
-}
+  }
+  
   
 
 const page = async ({ params }) => {
@@ -338,11 +340,11 @@ const page = async ({ params }) => {
               )
             })}
           </div>
-          {service.serviceVideo && (
+          {service.serviceVideoLink && (
               <iframe
                 width="560"
                 height="315"
-                src={service.serviceVideo}
+                src={`${service.serviceVideoLink}&autoplay=1`}
                 title="YouTube video player"
                 frameBorder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"

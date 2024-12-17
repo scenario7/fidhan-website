@@ -197,8 +197,8 @@
                   <NavBar />
                   <div className='flex flex-col items-center gap-3 px-10 md:px-0'>
                       <h3 className={`${dmsans.className} text-[#101010] tracking-tight`}>Because Your Style Deserves Uniqueness</h3>
-                      <div className='w-40 md:w-80 bg-gradient-to-r from-[#ffffff] via-[#AE7C53] to-[#ffffff] h-[2px]'></div>
-                      <h1 className={`${federo.className} text-5xl md:text-6xl tracking-tight bg-gradient-to-r from-[#C08E58] to-[#AE7C53] inline-block text-transparent bg-clip-text`}>Our Services</h1>
+                      <div className='w-40 md:w-80 bg-gradient-to-r from-[#ffffff] via-[#C5B692] to-[#ffffff] h-[2px]'></div>
+                      <h1 className={`${federo.className} text-5xl md:text-6xl tracking-tight bg-gradient-to-r from-[#C5B692] to-[#C5B692] inline-block text-transparent bg-clip-text`}>Our Services</h1>
                       <p className={`${dmsans.className} text-black md:text-md tracking-tight md:px-28 text-center`}>Crafted with precision and passion, our jewelry is designed to reflect your individuality, offering timeless elegance that complements your unique style and grace.</p>
                   </div>
                   <div className="flex gap-10 flex-col py-10 px-5">

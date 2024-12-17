@@ -22,7 +22,7 @@ const page = () => {
         <div className='flex flex-col items-center md:items-start gap-3 px-10 py-5 md:py-10 md:px-0'>
             <h3 className={`${dmsans.className} text-[#101010] tracking-tight`}>Reach out now for a quote</h3>
             <div className='w-40 md:w-80 bg-gradient-to-r from-[#C5B692] to-[#ffffff] h-[2px]'></div>
-            <h1 className={`${federo.className} text-5xl md:text-6xl tracking-tight bg-gradient-to-r from-[#C08E58] to-[#C5B692] inline-block text-transparent bg-clip-text`}>Contact Us</h1>
+            <h1 className={`${federo.className} text-5xl md:text-6xl tracking-tight bg-gradient-to-r from-[#C5B692] to-[#C5B692] inline-block text-transparent bg-clip-text`}>Contact Us</h1>
             <div className={`flex flex-col text-[#101010] ${dmsans.className} tracking-tighter md:w-1/2 gap-5`}>
                 <p>Email, call or complete the form to learn how Q Stone Designs can help you with your needs.</p>
                 <a href="mailto:info@qstone.com">info@qstone.com</a>
