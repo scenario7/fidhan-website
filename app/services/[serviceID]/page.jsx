@@ -305,6 +305,23 @@ const page = async ({ params }) => {
                         ))}
                     </div>
                 ))}
+                          {service.serviceVideoLink?.length > 0 && (
+            <div className="flex md:flex-row flex-col flex-wrap justify-center gap-4">
+              {service.serviceVideoLink.map((videoLink, index) => (
+                <div key={index} className="md:w-[500px] md:h-[400px] w-[300px] h-[400px] py-10">
+                  <iframe
+                    className="w-full h-full"
+                    src={`${videoLink}&autoplay=1&mute=1`}
+                    title={`YouTube video player ${index + 1}`}
+                    frameBorder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; muted"
+                    referrerPolicy="strict-origin-when-cross-origin"
+                    allowFullScreen
+                  ></iframe>
+                </div>
+              ))}
+            </div>
+          )}
                 {params.serviceID === 'jewellery-repair' && (
                   <p className={`${dmsans.className} text-[#101010] text-left px-10 md:px-28 w-full`}>
                     <ul className='list-disc list-inside'>
@@ -340,26 +357,6 @@ const page = async ({ params }) => {
               )
             })}
           </div>
-          {service.serviceVideoLink?.length > 0 && (
-            <div className="flex md:flex-row flex-col flex-wrap justify-center gap-4">
-              {service.serviceVideoLink.map((videoLink, index) => (
-                <div key={index} className="md:w-[500px] md:h-[400px] w-[300px] :h-[500px]">
-                  <iframe
-                    className="w-full h-full"
-                    src={`${videoLink}&autoplay=1&mute=1`}
-                    title={`YouTube video player ${index + 1}`}
-                    frameBorder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; muted"
-                    referrerPolicy="strict-origin-when-cross-origin"
-                    allowFullScreen
-                  ></iframe>
-                </div>
-              ))}
-            </div>
-          )}
-
-
-
           <div className="flex md:flex-row flex-col px-10 gap-5 md:gap-10">
             {service.images.map((image, index) => {
               return (

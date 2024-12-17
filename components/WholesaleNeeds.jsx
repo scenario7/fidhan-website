@@ -37,7 +37,7 @@ const needs = [
         <IoDiamondOutline className='text-white h-10 w-10'/>
       ),
       title: "In-House Diamond Manufacturing",
-      subtitle: "Expertise in creating sustainable, high-quality diamonds."
+      subtitle: "Expertise in creating sustainable, high-quality diamonds, crafted with precision and ethical sourcing to ensure lasting beauty and value. "
   },
   {
     svg: (
@@ -75,7 +75,6 @@ const needs = [
 },
   // Add similar objects for "Custom Gemstone Cutting & Fancy Shapes", "Corporate Gifting Solutions", "Ethical Sourcing Practices", and "Ethical Labor Practices"
 ];
-
 
 const federo = Federo({
     weight: ["400"], // Specify weights
