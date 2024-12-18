@@ -17,13 +17,15 @@ const federo = Federo({
     subsets: ["latin"],    // Choose subsets
   });
 
-const CustomFooter = () => {
+const CustomFooter = ({showLogo}) => {
   return (
-    <div className='flex flex-col md:flex-row items-center md:items-end justify-between px-10 py-10 w-screen'>
+    <div className='flex flex-col md:flex-row items-center md:items-end justify-between px-10 py-10 w-screen outline-[#C5B692] outline-4 outline-double'>
         <div className='flex flex-col items-center md:items-start'>
-        <Link href="/">
-          <Image src={whiteBG} height={90} alt='Logo' className='rounded-full'/>
-        </Link>
+          {showLogo === true && (
+            <Link href="/" className={`${showLogo ? 'flex' : 'hidden'}`}>
+              <Image src={whiteBG} height={90} alt='Logo' className='rounded-full'/>
+            </Link>
+          )}
         <p className={`text-[#808080] text-center md:text-left ${dmsans.className}`}>
         <a href="">info@qstonedesigns.com</a>
         </p>

@@ -25,7 +25,7 @@ const page = () => {
         <Link href="/" className={`${dmsans.className} tracking-tight text-lg text-center`}>
           Home Page &rarr;
         </Link>
-        <CustomFooter/>
+        <CustomFooter showLogo={true}/>
     </div>
   )
 }

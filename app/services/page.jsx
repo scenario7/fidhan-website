@@ -188,7 +188,7 @@
                       <div className='flex flex-col items-center gap-3 px-10 md:px-0'>
                           <h1 className='text-2xl text-red-500'>No Services Found</h1>
                       </div>
-                      <CustomFooter />
+                      <CustomFooter showLogo={true} />
                   </div>
               );
           }
@@ -253,7 +253,7 @@
                       })}
                   </div>
       
-                  <CustomFooter />
+                  <CustomFooter showLogo={true} />
               </div>
           );
       };

@@ -22,7 +22,7 @@ export default function Home() {
       <WholesaleNeeds/>
       <Steps/>
       <OurCollection/>
-      <CustomFooter/>
+      <CustomFooter showLogo={true}/>
     </div>
   );
 }

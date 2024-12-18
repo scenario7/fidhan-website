@@ -16,9 +16,9 @@ const dmsans = DM_Sans({
 
 const page = () => {
   return (
-    <div className='flex flex-col'>
+    <div className='flex flex-col justify-between min-h-screen'>
         <NavBar/>
-        <div className='flex md:flex-row flex-col px-10 md:px-28 md:text-left text-center justify-between'>
+        <div className='flex md:flex-row flex-col px-10 pb-10 md:px-28 md:text-left text-center justify-between'>
         <div className='flex flex-col items-center md:items-start gap-3 px-10 py-5 md:py-10 md:px-0'>
             <h3 className={`${dmsans.className} text-[#101010] tracking-tight`}>Reach out now for a quote</h3>
             <div className='w-40 md:w-80 bg-gradient-to-r from-[#C5B692] to-[#ffffff] h-[2px]'></div>
@@ -67,7 +67,7 @@ const page = () => {
             </form>
         </div>
         </div>
-        <CustomFooter/>
+        <CustomFooter showLogo={false}/>
     </div>
   )
 }

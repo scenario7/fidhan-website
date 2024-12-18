@@ -44,7 +44,7 @@ const OurCollection = () => {
           <h1
             className={`${federo.className} text-5xl md:text-8xl tracking-tighter`}
             style={{
-              background: "linear-gradient(to right, #C08E58, #C5B692)",
+              background: "linear-gradient(to right, #C5B692, #C5B692)",
               WebkitBackgroundClip: "text",
               WebkitTextFillColor: "transparent",
             }}
@@ -60,7 +60,7 @@ const OurCollection = () => {
           <h1
             className={`${federo.className} text-5xl md:text-8xl tracking-tighter ml-20 md:ml-36`}
             style={{
-              background: "linear-gradient(to right, #C08E58, #C5B692)",
+              background: "linear-gradient(to right, #C5B692, #C5B692)",
               WebkitBackgroundClip: "text",
               WebkitTextFillColor: "transparent",
             }}

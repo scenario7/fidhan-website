@@ -18,7 +18,8 @@ const ServiceCard = ({ title, bgImageURL, id }) => {
         <div
             className="relative flex justify-between items-center px-3 py-7 w-full text-white"
             style={{
-                backgroundImage: `linear-gradient(to right, #10101080, #C5B69280), url(${bgImageURL})`,
+                backgroundImage: `linear-gradient(to right, #10101080, #C5B69280)`,
+                backgroundColor : "C5B692",
                 backgroundSize: "cover",
                 backgroundPosition: "center",
             }}
@@ -27,9 +28,9 @@ const ServiceCard = ({ title, bgImageURL, id }) => {
             <svg
                 data-slot="icon"
                 fill="none"
-                strokeWidth="1.5"
+                strokeWidth="2"
                 className="w-5 z-10"
-                stroke="currentColor"
+                stroke="black"
                 viewBox="0 0 24 24"
                 xmlns="http://www.w3.org/2000/svg"
                 aria-hidden="true"
