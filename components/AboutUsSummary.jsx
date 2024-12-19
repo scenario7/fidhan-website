@@ -30,7 +30,7 @@ const AboutUsSummary = () => {
                     ABOUT US
                 </h2>
                 <h1 className={`${dmsans.className} text-3xl tracking-tighter`}>
-                    Learn What we do at Q Stone Designs
+                    Learn What we do at Q Stone
                 </h1>
                 <p className={`${dmsans.className} text-[#101010] tracking-tighter`}>
                     A tribute to natures elegance and timeless beauty. Each piece in this collection captures the delicate intricacies of blooming petals, crafted with precision and adorned with vibrant gemstones to mirror the colors of a blossoming garden.
