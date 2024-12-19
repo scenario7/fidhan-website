@@ -16,15 +16,10 @@ const ServiceCard = ({ title, bgImageURL, id }) => {
     return (
         <Link href={`/services/${id}`}>
         <div
-            className="relative flex justify-between items-center px-3 py-7 w-full text-black rounded-2xl"
-            style={{
-                backgroundImage: `linear-gradient(to right, #C5B69280, #C5B69280)`,
-                backgroundColor : "C5B692",
-                backgroundSize: "cover",
-                backgroundPosition: "center",
-            }}
+            className="flex justify-between items-center px-3 py-7 w-full hover:text-white text-[#706853] rounded-none h-full bg-[#C5B69280] hover:bg-[#C5B692] transition-colors"
+
         >
-            <h2 className={`${federo.className} text-[#706853] text-xl font-bold z-10`}>{title}</h2>
+            <h2 className={`${federo.className}  text-xl font-bold z-10`}>{title}</h2>
             <svg
                 data-slot="icon"
                 fill="none"

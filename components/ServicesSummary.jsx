@@ -187,7 +187,7 @@ const ServicesSummary = async () => {
                     Explore our Services and Offerings
                 </h1>
             </div>
-            <div className="flex flex-col gap-5">
+            <div className="grid grid-cols-1 gap-5">
                 {services.map((service, index) => {
                     return (
                         <ServiceCard 
