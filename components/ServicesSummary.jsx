@@ -183,7 +183,7 @@ const ServicesSummary = async () => {
     return (
         <div className="flex flex-col gap-10 px-10 md:px-28">
             <div className="text-center">
-                <h1 className={`${federo.className} text-[#C5B692] text-3xl`}>
+                <h1 className={`${federo.className} text-[#706853] text-3xl`}>
                     Explore our Services and Offerings
                 </h1>
             </div>

@@ -16,21 +16,21 @@ const ServiceCard = ({ title, bgImageURL, id }) => {
     return (
         <Link href={`/services/${id}`}>
         <div
-            className="relative flex justify-between items-center px-3 py-7 w-full text-white"
+            className="relative flex justify-between items-center px-3 py-7 w-full text-black rounded-2xl"
             style={{
-                backgroundImage: `linear-gradient(to right, #10101080, #C5B69280)`,
+                backgroundImage: `linear-gradient(to right, #C5B69280, #C5B69280)`,
                 backgroundColor : "C5B692",
                 backgroundSize: "cover",
                 backgroundPosition: "center",
             }}
         >
-            <h2 className={`${federo.className} text-xl font-bold z-10`}>{title}</h2>
+            <h2 className={`${federo.className} text-[#706853] text-xl font-bold z-10`}>{title}</h2>
             <svg
                 data-slot="icon"
                 fill="none"
                 strokeWidth="2"
                 className="w-5 z-10"
-                stroke="black"
+                stroke="#706853"
                 viewBox="0 0 24 24"
                 xmlns="http://www.w3.org/2000/svg"
                 aria-hidden="true"
@@ -41,7 +41,6 @@ const ServiceCard = ({ title, bgImageURL, id }) => {
                     d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"
                 ></path>
             </svg>
-            <div className="absolute inset-0 bg-gradient-to-r from-[#101010] to-transparent"></div>
         </div>
         </Link>
     );

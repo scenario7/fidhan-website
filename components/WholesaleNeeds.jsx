@@ -89,7 +89,7 @@ const federo = Federo({
 const WholesaleNeeds = () => {
   return (
     <div className='flex flex-col items-center gap-6 px-5 md:px-28'>
-        <h1 className={`${federo.className} text-3xl tracking-tight text-[#C5B692] text-center`}> We understand wholesale needs</h1>
+        <h1 className={`${federo.className} text-3xl tracking-tight text-[#706853] text-center`}> We understand wholesale needs</h1>
         <h3 className={`${dmsans.className} text-[#808080] font-semibold tracking-tight text-center`}>We recognize the unique demands of your business. Uncover exceptional quality and one-of-a-kind designs that enhance your offerings with every stunning piece.</h3>
         <div className='grid grid-cols-2 md:grid-cols-4 md:py-10 gap-2 md:gap-5 items-stretch'>
             {needs.map((need) => {

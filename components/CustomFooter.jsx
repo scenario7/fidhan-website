@@ -23,7 +23,7 @@ const CustomFooter = ({showLogo}) => {
         <div className='flex flex-col items-center md:items-start'>
           {showLogo === true && (
             <Link href="/" className={`${showLogo ? 'flex' : 'hidden'}`}>
-              <Image src={whiteBG} height={90} alt='Logo' className='rounded-full'/>
+              <Image src={whiteBG} height={60} alt='Logo' className='rounded-full'/>
             </Link>
           )}
         <p className={`text-[#808080] text-center md:text-left ${dmsans.className}`}>

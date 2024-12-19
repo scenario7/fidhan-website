@@ -16,7 +16,7 @@ const dmsans = DM_Sans({
 
 const page = () => {
   return (
-    <div className='flex flex-col justify-between min-h-screen'>
+    <div className='flex flex-col justify-between'>
         <NavBar/>
         <div className='flex md:flex-row flex-col px-10 pb-10 md:px-28 md:text-left text-center justify-between'>
         <div className='flex flex-col items-center md:items-start gap-3 px-10 py-5 md:py-10 md:px-0'>
@@ -29,7 +29,7 @@ const page = () => {
                 <a href="tel:+919999999999">+91 9999999999</a>
             </div>
         </div>
-        <div className='bg-[#C5B692] md:px-10 px-3 py-5 md:py-10 flex flex-col gap-5 md:w-1/2'>
+        <div className='bg-[#C5B692] md:px-10 px-3 py-5 md:py-20 flex flex-col gap-5 md:w-1/2'>
             <form className="flex flex-col gap-5">
                 <div className="flex md:flex-row flex-col gap-3">
                     <input 
