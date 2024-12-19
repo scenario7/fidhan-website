@@ -13,14 +13,14 @@ const geistMono = localFont({
 });
 
 export const metadata = {
-  title: "Q Stone Designs",
-  description: "Crafted with excellence, worn with pride.",
+  title: "Q Stone Jewels",
+  description: "Jewellery, Redefined.",
 };
 
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <meta property="og:image" content="https://firebasestorage.googleapis.com/v0/b/vistara-website.appspot.com/o/logo-white-bg.png?alt=media&token=003b120f-e2a1-46f4-9fe4-af3b56d860ee" />
+      <meta property="og:image" content="https://firebasestorage.googleapis.com/v0/b/vistara-website.appspot.com/o/logo-white-bg.png?alt=media&token=76ea81be-e23b-42f2-b9f5-bf9b198427f4" />
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
