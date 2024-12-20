@@ -20,6 +20,7 @@ const federo = Federo({
 
 const CustomFooter = ({showLogo}) => {
   return (
+    <div className='flex flex-col bg-[#706853]'>
     <div className='flex flex-col md:flex-row items-center md:items-end justify-between px-10 py-10 w-screen bg-[#C5B692]'>
         <div className='flex flex-col gap-5 items-center md:items-start'>
         <div className='flex gap-5'>
@@ -37,7 +38,8 @@ const CustomFooter = ({showLogo}) => {
           <Link href='/services'>Services</Link>
           <a>Contact Us</a>     
       </div>
-
+    </div>
+    <p className={`${dmsans.className} text-[#C5B692] text-center text-xs py-1 px-2`}>Designed & Developed by <a href="https://kevinthomas.in" target='_blank' className='underline underline-offset-2'>Kevin</a></p>
     </div>
   )
 }
