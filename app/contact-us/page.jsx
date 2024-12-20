@@ -30,40 +30,48 @@ const page = () => {
             </div>
         </div>
         <div className='bg-[#C5B692] md:px-10 px-3 py-5 md:py-20 flex flex-col gap-5 md:w-1/2'>
-            <form className="flex flex-col gap-5">
+            <form className="flex flex-col gap-5" action="https://api.web3forms.com/submit" method="POST">
+            <input type="hidden" name="access_key" value="477002e7-6f10-4491-866d-e66e13d635e7"></input>
                 <div className="flex md:flex-row flex-col gap-3">
                     <input 
                         type="text" 
+                        name="First_Name"
                         placeholder="First Name" 
                         className={`w-full px-3 py-2 bg-[#ffffff] text-[#101010] focus:outline-none focus:ring-2 focus:ring-[#FFFFFF]" ${dmsans.className} tracking-tight`}
                     />
                     <input 
                         type="text" 
+                        name="Last_Name"
                         placeholder="Last Name" 
                         className={`w-full px-3 py-2 bg-[#ffffff] text-[#101010] focus:outline-none focus:ring-2 focus:ring-[#FFFFFF]" ${dmsans.className} tracking-tight`}
                     />
                 </div>
                 <input 
                     type="email" 
+                    name="Email"
                     placeholder="Email" 
                     className={`w-full px-3 py-2 bg-[#ffffff] text-[#101010] focus:outline-none focus:ring-2 focus:ring-[#FFFFFF]" ${dmsans.className} tracking-tight`}
                 />
                 <input 
                     type="tel" 
+                    name="Phone_Number"
                     placeholder="Phone Number" 
                     className={`w-full px-3 py-2 bg-[#ffffff] text-[#101010] focus:outline-none focus:ring-2 focus:ring-[#FFFFFF]" ${dmsans.className} tracking-tight`}
                 />
                 <textarea 
                     placeholder="Message" 
+                    name="Message"
                     className={`w-full px-3 py-2 bg-[#ffffff] text-[#101010] focus:outline-none focus:ring-2 focus:ring-[#FFFFFF] resize-none" ${dmsans.className} tracking-tight`}
                     rows="5"
                 ></textarea>
+                <input type="hidden" name="redirect" value="https://web3forms.com/success"></input>
                 <button 
                     type="submit" 
                     className={`text-[#FFFFFF] px-5 py-2 bg-[#101010] hover:bg-[#ffffff] hover:text-black transition ${dmsans.className} tracking-tight`}
                 >
                     Submit
                 </button>
+                
             </form>
         </div>
         </div>
