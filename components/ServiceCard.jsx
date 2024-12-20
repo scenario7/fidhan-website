@@ -16,7 +16,7 @@ const ServiceCard = ({ title, bgImageURL, id }) => {
     return (
         <Link href={`/services/${id}`}>
         <div
-            className="flex justify-between items-center px-3 py-7 w-full hover:text-white text-[#706853] rounded-none h-full bg-[#C5B69280] hover:bg-[#C5B692] transition-colors"
+            className="flex justify-between items-center px-3 py-7 w-full text-white hover:text-[#706853] rounded-none h-full hover:bg-[#C5B69280] bg-[#C5B692] transition-colors"
 
         >
             <h2 className={`${federo.className}  text-xl font-bold z-10`}>{title}</h2>

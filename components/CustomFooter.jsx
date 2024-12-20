@@ -24,7 +24,7 @@ const CustomFooter = ({showLogo}) => {
         <div className='flex flex-col gap-5 items-center md:items-start'>
         <div className='flex gap-5'>
           <FaInstagram className='w-8 h-8 text-[#706853]'/>
-          <FaLinkedinIn className='w-8 h-8 text-[#706853]'/>
+          <a href="https://www.linkedin.com/company/q-stone-jewels"><FaLinkedinIn className='w-8 h-8 text-[#706853]'/></a>
           <FaYoutube className='w-8 h-8 text-[#706853]'/>
         </div>
         <p className={`text-[#ffffff] text-center md:text-left ${dmsans.className}`}>
