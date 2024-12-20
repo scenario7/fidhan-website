@@ -33,7 +33,7 @@ const AboutUsSummary = () => {
                     Learn What we do at Q Stone
                 </h1>
                 <p className={`${dmsans.className} text-[#101010] tracking-tighter`}>
-                    A tribute to natures elegance and timeless beauty. Each piece in this collection captures the delicate intricacies of blooming petals, crafted with precision and adorned with vibrant gemstones to mirror the colors of a blossoming garden.
+                We are a 360° jewelry solution provider, offering end-to-end services from design to manufacturing. With over 15 years of experience, we specialize in sourcing the finest diamonds, gemstones, and precious metals. Our in-house lab-grown diamond facility provides ethical, sustainable alternatives, and our expert designers bring your vision to life with unmatched craftsmanship.
                 </p>
                 <Link href="/about-us" className={`${dmsans.className} outline outline-black px-2 py-1 outline-1 rounded-lg hover:bg-black hover:text-white transition`}>
                     Read More &rarr;

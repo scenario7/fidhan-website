@@ -363,6 +363,7 @@ const page = async ({ params }) => {
             })}
           </div>
           <EmblaCarousel images={service.images}/>
+          <div className='h-10'></div>
           <CustomFooter showLogo={true}/>
       </div>
   );

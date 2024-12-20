@@ -25,8 +25,8 @@ const page = () => {
             <h1 className={`${federo.className} text-5xl md:text-6xl tracking-tight bg-gradient-to-r from-[#C5B692] to-[#C5B692] inline-block text-transparent bg-clip-text`}>Contact Us</h1>
             <div className={`flex flex-col text-[#101010] ${dmsans.className} tracking-tighter md:w-1/2 gap-5`}>
                 <p>Email, call or complete the form to learn how Q Stone Designs can help you with your needs.</p>
-                <a href="mailto:info@qstone.com">info@qstone.com</a>
-                <a href="tel:+919999999999">+91 9999999999</a>
+                <a href="mailto:sales@qstonejewels.com">sales@qstonejewels.com</a>
+                <a href="tel:+917304392332">+91 7304392332</a>
             </div>
         </div>
         <div className='bg-[#C5B692] md:px-10 px-3 py-5 md:py-20 flex flex-col gap-5 md:w-1/2'>

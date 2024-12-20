@@ -23,7 +23,7 @@ const needs = [
           </svg>
       ),
       title: "Competitive Pricing Strategy",
-      subtitle: "Quality jewelry at prices that help your business thrive."
+      subtitle: "We offer high quality jewelry at competitive prices, helping your business thrive with the best rates and cost savings."
   },
   {
       svg: (
